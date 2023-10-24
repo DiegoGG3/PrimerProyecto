@@ -54,8 +54,4 @@ create table dificultad(
     primary key (ID_dificultad, Nombre)
 );
 
-insert into categoria(ID_categoria,Nombre) values(1,"A");
-insert into dificultad(ID_dificultad,Nombre) values(1,"Facil");
-insert into pregunta(ID_pregunta,Enunciado,respuestas,categoria,dificultad) values (1,"d",'{"Pregunta1": "Respuesta1", "Pregunta2": "Respuesta2"}', "A", "Facil");
-select * from pregunta;
 commit;
