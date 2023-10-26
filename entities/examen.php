@@ -1,44 +1,33 @@
 <?php
 class examen {
-    private $nombre;
-    private $contraseña;
-    private $rol;
+    private $id;
+    private $fechaHora;
+    private $id_creador;
         
     //Constructor
-    public function __construct($nombre, $contraseña, $rol) {
-        $this->nombre = $nombre;
-        $this->contraseña = $contraseña;
-        $this->rol = $rol;
+    public function __construct($id, $fechaHora, $id_creador) {
+        $this->id = $id;
+        $this->fechaHora = $fechaHora;
+        $this->id_creador = $id_creador;
     }
 
-     // Getter para obtener el nombre
-     public function get_Nombre() {
-        return $this->nombre;
+     // Getter para obtener el id
+     public function get_id() {
+        return $this->id;
     }
 
-    // Setter para establecer el nombre
-    public function set_Nombre($nombre) {
-        $this->nombre = $nombre;
+
+    // Getter para obtener la fecha$fechaHora
+    public function get_fecha$fechaHora() {
+        return $this->fecha$fechaHora;
     }
 
-    // Getter para obtener la contraseña
-    public function get_Contraseña() {
-        return $this->contraseña;
+    
+    // Getter para obtener la id del creador
+    public function get_idcreador$id_creador() {
+        return $this-$id_creador$id_creador;
     }
 
-    // Setter para establecer la contraseña
-    public function set_Contraseña($contraseña) {
-        $this->contraseña = $contraseña;
-    }
-
-    // Getter para obtener el rol
-    public function get_Rol() {
-        return $this->rol;
-    }
-
-    // Setter para establecer el rol
-    public function set_Rol($rol) {
-        $this->rol = $rol;
-    }
+    
 }
 ?>
