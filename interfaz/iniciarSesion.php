@@ -1,28 +1,21 @@
 <?php        
-require '../entities/DB.php';
+require_once '../helper/autocargar.php';
+$db= new DB();
+$db->abreConexion();
+$conexion=$db->getConexion(); 
 
-$db = new Database(); 
-$pdo = $db->getPdo(); 
 
 if (isset($_POST['login'])) {
-
     if (isset($_POST['username']) && isset($_POST['password'])) {
         $username = $_POST['username'];
         $password = $_POST['password'];
 
-        $sql = "SELECT * FROM User WHERE nombre = ?";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute([$username]);
-        $user = $stmt->fetch();
-        if ($user && $password == $user['password']) {
-            session_start();
-            $_SESSION['username'] = $user['username'];
-        
-            header('Location: examen.html');
-        } else {
-            echo "Nombre de usuario o contraseña incorrectos.";
-        }
+        $Repository= new BDRepository();
+        $arrayDeUser=$Repository-> selectUniversal($conexion, 'User');
+        var_dump ($arrayDeUser);
     }
+
+
 }else{
     echo "<!DOCTYPE html>
     <html lang='es'>
@@ -50,7 +43,7 @@ if (isset($_POST['login'])) {
     
         </div>
     </body>
-    </html>"
+    </html>";
 }
 ?>
 

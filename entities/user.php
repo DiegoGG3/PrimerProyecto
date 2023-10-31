@@ -1,6 +1,6 @@
 <?php
 class user {
-    private $id
+    private $id;
     private $nombre;
     private $contraseña;
     private $rol;
