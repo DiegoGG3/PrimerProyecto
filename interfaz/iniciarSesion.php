@@ -1,20 +1,37 @@
 <?php        
 require_once '../helper/autocargar.php';
-$db= new DB();
+$db = new DB();
 $db->abreConexion();
-$conexion=$db->getConexion(); 
+$conexion = $db->getConexion();
+
+$valida=new Validacion();
+$repository = new BDRepository();
+$login = new Login($repository,$conexion);
+
+// Luego, llama a Identifica en la instancia de Login
 
 
 if (isset($_POST['login'])) {
-    if (isset($_POST['username']) && isset($_POST['password'])) {
+    $valida->Requerido('username');
+    $valida->Requerido('password');
+
+    if ($valida->ValidacionPasada()) {
+        // Autenticar al usuario
         $username = $_POST['username'];
         $password = $_POST['password'];
 
-        $Repository= new BDRepository();
-        $arrayDeUser=$Repository-> selectUniversal($conexion, 'User');
-        var_dump ($arrayDeUser);
-    }
+        // Llama al método Identifica en la instancia de Login
+        $login->Identifica($username, $password);
 
+        if ($login->UsuarioEstaLogueado()) {
+            // Inicio de sesión exitoso
+            $_SESSION['username'] = $username;
+            header("location: examen.html");
+            exit();
+        } else {
+            echo "Error: Usuario o contraseña incorrectos.";
+        }
+    }
 
 }else{
     echo "<!DOCTYPE html>
@@ -28,17 +45,17 @@ if (isset($_POST['login'])) {
     <body>
         <div class='container'>
             <h2>Iniciar Sesión</h2>
-            <form>
-                <div class='input-container'>
-                    <label for='username'>Nombre de usuario</label>
-                    <input type='text' id='username' name='username' required>
-                </div>
-                <div class='input-container'>
-                    <label for='password'>Contraseña</label>
-                    <input type='password' id='password' name='password' required>
-                </div>
-                <button type='submit' name='login'>Iniciar Sesión</button><br>
-            </form>
+            <form method='post'>
+            <div class='input-container'>
+                <label for='username'>Nombre de usuario</label>
+                <input type='text' id='username' name='username' required>
+            </div>
+            <div class='input-container'>
+                <label for='password'>Contraseña</label>
+                <input type='password' id='password' name='password' required>
+            </div>
+            <button type='submit' name='login'>Iniciar Sesión</button><br>
+        </form>
             <a href='registrarse.html'>Regístrate</a>
     
         </div>
