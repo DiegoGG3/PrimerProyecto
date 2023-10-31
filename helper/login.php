@@ -6,18 +6,16 @@ $conexion = $db->getConexion();
 
 class Login
 {
-    private $repository;
-    private $conexion;
-
     private $usuarioLogueado = false;
 
     public function __construct($repository, $conexion)
     {
         $this->repository = $repository;
         $this->conexion = $conexion;
+        $this->arrayDeUser = $this->repository->selectUniversal($this->conexion, 'User');
     }
 
-    public function Identifica( $usuario,  $contrasena)
+    public function Identifica($usuario, $contrasena)
     {
         if ($this->ExisteUsuario($usuario, $contrasena)) {
             $this->usuarioLogueado = true;
@@ -28,14 +26,14 @@ class Login
     }
 
     private function ExisteUsuario($usuario, $contrasena) {
-        // Aquí asumimos que $arrayDeUser contiene objetos User
-        foreach ($arrayDeUser as $user) {
-            if ($user->nombre === $usuario && $user->contrasena === $contrasena) {
+        foreach ($this->arrayDeUser as $user) {
+            if ($user->get_Nombre() === $usuario && $user->get_Contraseña() === $contrasena) {
                 return true;
             }
         }
         return false;
     }
+    
     
 
     public function UsuarioEstaLogueado()
