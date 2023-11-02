@@ -37,7 +37,7 @@ if (isset($_POST['login'])) {
     <head>
         <meta charset='UTF-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <link rel='stylesheet' type='text/css' href='inicioSesio.css'>
+        <link rel='stylesheet' type='text/css' href='../css/inicioSesio.css'>
         <title>Iniciar Sesión</title>
     </head>
     <body>
