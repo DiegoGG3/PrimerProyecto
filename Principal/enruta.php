@@ -10,12 +10,12 @@ if (isset($_GET['menu'])) {
         require_once './Vistas/Login/cerrarsesion.php';
      
     }
-    if ($_GET['menu'] == "mantenimiento") {
-        require_once './Vistas/mantenimiento/mantenimiento.php';
+    if ($_GET['menu'] == "Examen") {
+        require_once './interfaz/examen.html';
      
     }
-    if ($_GET['menu'] == "listadoanimales") {
-        require_once './Vistas/Mantenimiento/listadoanimales.php';
+    if ($_GET['menu'] == "IniciaSesion") {
+        header("location: ./interfaz/iniciarSesion.php");
      
     }
     if ($_GET['menu'] == "listadovacunas") {

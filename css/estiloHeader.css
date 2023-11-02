@@ -49,18 +49,4 @@
     cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
 }
 
-/* Estilos para el encabezado */
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #333;
-    padding: 10px 0;
-}
-
-/* Estilos para el contenido */
-#cuerpo {
-    margin-top: 100px; /* Ajusta el espacio entre el encabezado y el contenido */
-}
 

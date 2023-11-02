@@ -1,5 +1,5 @@
 <?php
-require_once '../helper/autocargar.php';
+require_once 'autocargar.php';
 $db = new DB();
 $db->abreConexion();
 $conexion = $db->getConexion();

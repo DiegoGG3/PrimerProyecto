@@ -7,6 +7,11 @@
         $repository=$_SERVER['DOCUMENT_ROOT']."/PrimerProyecto/repository/".$clase.'.php';
         $database=$_SERVER['DOCUMENT_ROOT']."/PrimerProyecto/database/".$clase.'.php';
         $validacion=$_SERVER['DOCUMENT_ROOT']."/PrimerProyecto/helper/".$clase.'.php';
+        $interfaz=$_SERVER['DOCUMENT_ROOT']."/PrimerProyecto/interfaz/".$clase.'.php';
+        $css=$_SERVER['DOCUMENT_ROOT']."/PrimerProyecto/css/".$clase.'.php';
+        $principal=$_SERVER['DOCUMENT_ROOT']."/PrimerProyecto/Principal/".$clase.'.php';
+
+
 
 
         if(file_exists($entities)){
@@ -19,6 +24,16 @@
 
         }else if(file_exists($validacion)){
             require_once $validacion;
+
+        }else if(file_exists($interfaz)){
+            require_once $interfaz;
+
+        }else if(file_exists($css)){
+            require_once $css;
+        }
+        else if(file_exists($principal)){
+            require_once $principal;
+
         }else{
             var_dump($repository);
         }
