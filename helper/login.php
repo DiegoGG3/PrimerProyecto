@@ -42,7 +42,4 @@ class Login
     }
 }
 
-$repository = new BDRepository();
-$login = new Login($repository, $conexion);
-
 ?>

@@ -28,8 +28,6 @@ if (isset($_POST['login'])) {
             $_SESSION['username'] = $username;
             header("location: examen.html");
             exit();
-        } else {
-            echo "Error: Usuario o contraseña incorrectos.";
         }
     }
 
