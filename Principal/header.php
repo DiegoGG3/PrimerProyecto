@@ -2,7 +2,7 @@
 
 <header>
     <nav class="barra-navegacion">
-        <a class="titulo-sitio" href="#">Autoescuela Las Fuentezuelas</a>
+        <a class="inicio" href="#">Autoescuela Las Fuentezuelas</a>
         
         <div class="menu-navegacion">
             <ul class="lista-enlaces">

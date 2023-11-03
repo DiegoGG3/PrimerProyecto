@@ -1,12 +1,8 @@
 
 body {
-    display: flex; /* Muestra los elementos en una fila horizontal */
-    flex-direction: column; /* Establece la dirección de flexión a horizontal (predeterminado) */
     justify-content: space-between; /* Distribuye los elementos a los lados */
-    align-items: center; /* Centra verticalmente los elementos */
     margin: 0; /* Elimina el margen predeterminado */
     padding: 0; /* Elimina el relleno predeterminado */
-    height: 100vh; /* Ajusta la altura de la página al 100% de la ventana gráfica */
 
     font-family: Arial, sans-serif;
     background-size: cover;
@@ -33,4 +29,7 @@ body {
     color: #fff;
     padding: 10px;
 }
+
+
+
 

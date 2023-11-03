@@ -18,15 +18,7 @@ if (isset($_GET['menu'])) {
         header("location: ./interfaz/iniciarSesion.php");
      
     }
-    if ($_GET['menu'] == "listadovacunas") {
-        require_once './Vistas/Mantenimiento/listadovacunas.php';
-     
-    }
-
-    
-
-    
+        
 }
 
     
-    //Añadir otras rutas
