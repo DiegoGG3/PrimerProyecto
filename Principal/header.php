@@ -17,11 +17,6 @@
                 </li>
             </ul>
             
-            
-            <form class="formulario-busqueda">
-                <input class="campo-busqueda" type="search" placeholder="Buscar" aria-label="Buscar">
-                <button class="boton-busqueda" type="submit">Buscar</button>
-            </form>
         </div>
     </nav>
 </header>

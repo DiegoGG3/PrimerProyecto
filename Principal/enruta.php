@@ -1,7 +1,7 @@
 <?php
 if (isset($_GET['menu'])) {
     if ($_GET['menu'] == "inicio") {
-        require_once 'index.php';
+        require_once '.';
     }
     if ($_GET['menu'] == "login") {
         require_once './Vistas/Login/autentifica.php';
@@ -16,6 +16,10 @@ if (isset($_GET['menu'])) {
     }
     if ($_GET['menu'] == "IniciaSesion") {
         header("location: ./interfaz/iniciarSesion.php");
+     
+    }
+    if ($_GET['menu'] == "Conocenos") {
+        require_once "./interfaz/conocenos.php";
      
     }
         
