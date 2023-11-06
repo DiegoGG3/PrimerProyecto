@@ -3,13 +3,13 @@
 
 require_once '../helper/autocargar.php';
 
-// $db = new DB();
-// $db->abreConexion();
-// $conexion = $db->getConexion();
+$db = new DB();
+$db->abreConexion();
+$conexion = $db->getConexion();
 
-// $valida=new Validacion();
-// $repository = new BDRepository();
-// $login = new Login($repository,$conexion);
+$valida=new Validacion();
+$repository = new BDRepository();
+$login = new Login($repository,$conexion);
 
 // Luego, llama a Identifica en la instancia de Login
 
