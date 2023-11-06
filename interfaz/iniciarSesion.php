@@ -29,9 +29,17 @@ if (isset($_POST['login'])) {
         if ($login->UsuarioEstaLogueado()) {
             // Inicio de sesión exitoso
             $_SESSION['username'] = $username;
-            header("location: examen.html");
-            exit();
         }
+
+        // $user=BDRepository::devolverUsuario($conexion, $username, $password);
+
+        // if ($user==null) {
+        //     var_dump("MAL");
+        // }else{
+        //     loginRepository::login($user);
+        //     $_GET['menu'] == "inicio";
+        //     require_once '../Principal/enruta.php';
+        // }
     }
 
 }else{

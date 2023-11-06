@@ -19,7 +19,7 @@ class Login
     {
         if ($this->ExisteUsuario($usuario, $contrasena)) {
             $this->usuarioLogueado = true;
-            echo "Inicio de sesión exitoso para $usuario.";
+                header("location: ../index.php");
         } else {
             echo "Error: Usuario o contraseña incorrectos.";
         }

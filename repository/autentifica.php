@@ -9,7 +9,7 @@
         {
             if(Login::Identifica($_POST['usuario'],$_POST['contrasena']))
             {
-                header("location:?menu=".$url);
+                header("location:?menu=Examen");
             }
         }
     }
