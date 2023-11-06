@@ -1,52 +1,26 @@
-/* Estilos para la barra de navegación en la parte superior */
 .barra-navegacion {
-    background-color: #333; /* Color de fondo de la barra de navegación */
-    display: flex; /* Muestra los elementos en una fila horizontal */
-    justify-content: space-between; /* Distribuye los elementos a los lados */
-    align-items: center; /* Centra verticalmente los elementos */
-    padding: 10px 20px; /* Espaciado en la parte superior e inferior y los lados */
+    background-color: #333; 
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; 
 }
 
 .inicio {
-    color: #fff; /* Color del texto del logotipo */
-    font-size: 24px; /* Tamaño de fuente del logotipo */
-    text-decoration: none; /* Elimina la subraya de los enlaces */
-}
-
-.menu-navegacion {
-    list-style: none; /* Elimina los marcadores de lista */
-    margin: 0; /* Elimina el margen predeterminado */
-    padding: 0; /* Elimina el relleno predeterminado */
-    display: flex; /* Muestra los elementos en una fila horizontal */
-}
-
-.enlace {
-    margin-right: 20px; /* Espaciado entre elementos de la lista */
+    color: #fff; 
+    font-size: 24px; 
+    text-decoration: none; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 23px;
+    
 }
 
 .enlace a {
-    color: #fff; /* Color del texto de los enlaces de navegación */
-    text-decoration: none; /* Elimina la subraya de los enlaces */
+    color: #fff; 
+    text-decoration: none; 
 }
 
-/* Estilos para el formulario de búsqueda */
-.formulario-busqueda {
-    display: flex; /* Muestra los elementos en línea */
-    align-items: center; /* Centra verticalmente los elementos */
-    margin-left: auto; /* Mueve el formulario a la derecha */
-}
 
-.campo-busqueda {
-    padding: 5px; /* Espaciado interno del campo de búsqueda */
-    border: none; /* Elimina el borde del campo de búsqueda */
-}
-
-.boton-busqueda {
-    background-color: #333; /* Color de fondo del botón de búsqueda */
-    color: #fff; /* Color del texto del botón de búsqueda */
-    padding: 5px 10px; /* Espaciado interno del botón de búsqueda */
-    border: none; /* Elimina el borde del botón de búsqueda */
-    cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
-}
 
 

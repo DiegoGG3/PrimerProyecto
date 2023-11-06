@@ -1,10 +1,12 @@
 
 
 <header>
-    <nav class="barra-navegacion">
+    <div id="titulo">
         <a class="inicio" href="#">Autoescuela Las Fuentezuelas</a>
-        
-        <div class="menu-navegacion">
+    </div>
+
+    <nav class="barra-navegacion">
+
             <ul class="lista-enlaces">
                 <li class="enlace">
                     <a href="?menu=Examen">Realizar Examen <span class="oculto"></span></a>
@@ -17,6 +19,5 @@
                 </li>
             </ul>
             
-        </div>
     </nav>
 </header>
