@@ -17,21 +17,24 @@ class Login
 
     public function Identifica($usuario, $contrasena)
     {
-        if ($this->ExisteUsuario($usuario, $contrasena)) {
-            $this->usuarioLogueado = true;
-                header("location: ../index.php");
-        } else {
+        if ($this->ExisteUsuario($usuario, $contrasena)==null) {
             echo "Error: Usuario o contraseña incorrectos.";
+
+            
+        } else {
+            $this->usuarioLogueado = true;
+
+            var_dump($this->get_rol());
         }
     }
 
     private function ExisteUsuario($usuario, $contrasena) {
         foreach ($this->arrayDeUser as $user) {
             if ($user->get_Nombre() === $usuario && $user->get_Contraseña() === $contrasena) {
-                return true;
+                return $user;
             }
         }
-        return false;
+        return null;
     }
     
     
