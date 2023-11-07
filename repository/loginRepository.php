@@ -1,9 +1,6 @@
 <?php
     class loginRepository{
-        public static function redirigeLogin(){
-            header('Location: http://localhost/PrimerProyecto/interfaz/iniciarSesion.php');
-        }
-
+       
         public static function iniciarSesion(){
             session_start();
         }

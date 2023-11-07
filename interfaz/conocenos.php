@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="intro-container">
-        <form action="iniciarSesion.php">
+        <form>
             <h1>Bienvenido a la Autoescuela IES Fuentezuelas</h1>
             <p>Donde aprendes a conducir de manera segura y confiable.</p>
         </form>

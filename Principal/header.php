@@ -1,23 +1,23 @@
-
-
 <header>
-    <div id="titulo">
-        <a class="inicio" href="#">Autoescuela Las Fuentezuelas</a>
-    </div>
+        <?php
 
-    <nav class="barra-navegacion">
+            loginRepository::iniciarSesion();
+            //COMPROBAR SI EXISTE SESSION
+            if(!loginRepository::estaLog()){
+                require_once 'headerNoLog.php';
+            }else{
+                switch (strtoupper(loginRepository::comprobar("user")->get_Rol())) {
+                case "ADMIN":
+                    require_once 'adminHeader.php';
+                    break;
+                case "ALUMNO":
+                    require_once 'headerAlumno.php';
 
-            <ul class="lista-enlaces">
-                <li class="enlace">
-                    <a href="?menu=Examen">Realizar Examen <span class="oculto"></span></a>
-                </li>
-                <li class="enlace">
-                    <a href="?menu=Conocenos">Quienes Somos<span class="oculto"></span></a>
-                </li>
-                <li class="enlace">
-                    <a href="?menu=IniciaSesion">Iniciar Sesión<span class="oculto"></span></a>
-                </li>
-            </ul>
-            
-    </nav>
+                    break;
+                case "PROFESOR":
+                    require_once 'teacherHeader.php';
+                    break;
+                }
+            }
+        ?>
 </header>

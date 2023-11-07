@@ -14,6 +14,10 @@ if (isset($_GET['menu'])) {
         require_once './interfaz/examen.html';
      
     }
+    if ($_GET['menu'] == "Oferta") {
+        require_once './interfaz/oferta.php';
+     
+    }
     if ($_GET['menu'] == "IniciaSesion") {
         header("location: ./interfaz/iniciarSesion.php");
      
