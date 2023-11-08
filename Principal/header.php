@@ -8,7 +8,7 @@
             }else{
                 switch (strtoupper(loginRepository::comprobar("user")->get_Rol())) {
                 case "ADMIN":
-                    require_once 'adminHeader.php';
+                    require_once 'headerAdmin.php';
                     break;
 
                 case "ALUMNO":

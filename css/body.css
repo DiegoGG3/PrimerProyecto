@@ -22,14 +22,14 @@
 }
 
 /* Estilos para el título */
-h1 {
+#intro-container form h1 {
     font-size: 24px;
     color: #333;
     margin: 0;
 }
 
 /* Estilos para el párrafo */
-p {
+#intro-container form p {
     font-size: 16px;
     color: #666;
 }

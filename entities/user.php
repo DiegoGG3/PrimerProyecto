@@ -1,9 +1,9 @@
 <?php
 class user {
-    private $id;
-    private $nombre;
-    private $contraseña;
-    private $rol;
+    public $id;
+    public $nombre;
+    public $contraseña;
+    public $rol;
         
     //Constructor
     public function __construct($id, $nombre, $contraseña, $rol) {

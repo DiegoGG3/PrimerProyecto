@@ -10,11 +10,13 @@
     <link rel="stylesheet" type="text/css" href="./css/estiloHeader.css">
     <link rel="stylesheet" type="text/css" href="./css/body.css">
     <link rel="stylesheet" type="text/css" href="./css/oferta.css">
+    <!-- <link rel='stylesheet' type='text/css' href='./css/inicioSesio.css'> -->
+
 
 
 </head>
 
-<body>
+<body id='paginaPrincipal'>
     <div id="header">
         <?php require_once './Principal/header.php'; ?>
     </div>

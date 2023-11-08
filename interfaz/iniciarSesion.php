@@ -1,7 +1,6 @@
 <?php        
 
 
-require_once '../helper/autocargar.php';
 
 $db = new DB();
 $db->abreConexion();
@@ -35,29 +34,32 @@ if (isset($_POST['login'])) {
     }
 
 }else{
+    pintaPantalla();
+}
+
+function pintaPantalla(){
     echo "<!DOCTYPE html>
     <html lang='es'>
     <head>
         <meta charset='UTF-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <link rel='stylesheet' type='text/css' href='../css/inicioSesio.css'>
         <title>Iniciar Sesión</title>
     </head>
-    <body>
+    <body id='bodyInicio'>
         <div class='container'>
-            <h2>Iniciar Sesión</h2>
-            <form method='post'>
+            <h2 id='titulo'>Iniciar Sesión</h2>
+        <form method='post' id='formInicio'>
             <div class='input-container'>
-                <label for='username'>Nombre de usuario</label>
-                <input type='text' id='username' name='username' required>
+                <label for='username' class='labelInicio'>Nombre de usuario</label>
+                <input type='text' id='username' name='username' required class='inputInicio'>
             </div>
             <div class='input-container'>
-                <label for='password'>Contraseña</label>
-                <input type='password' id='password' name='password' required>
+                <label for='password' class='labelInicio'>Contraseña</label>
+                <input type='password' id='password' name='password' required class='inputInicio'>
             </div>
-            <button type='submit' name='login'>Iniciar Sesión</button><br>
+            <button type='submit' name='login' id='botonInicio'>Iniciar Sesión</button><br>
         </form>
-            <a href='registrarse.html'>Regístrate</a>
+            <a href='registrarse.html' id='aInicio'>Regístrate</a>
     
         </div>
     </body>

@@ -18,14 +18,23 @@ if (isset($_GET['menu'])) {
         require_once './interfaz/oferta.php';
      
     }
-    if ($_GET['menu'] == "IniciaSesion") {
-        header("location: ./interfaz/iniciarSesion.php");
+    if ($_GET['menu'] == "iniciarSesion") {
+        require_once './interfaz/iniciarSesion.php';
      
     }
     if ($_GET['menu'] == "Conocenos") {
         require_once "./interfaz/conocenos.php";
-     
     }
+
+    if ($_GET['menu'] == "ListaUsuario") {
+        require_once "./interfaz/listaUsuarios.php";
+    }
+
+    if ($_GET['menu'] == "Solicitudes") {
+        require_once "./interfaz/solicitudes.php";
+    }
+    
+
         
 }
 

@@ -1,7 +1,6 @@
 
 
 <header>
-    
     <div id="titulo">
         <a class="inicio" href="#">Autoescuela Las Fuentezuelas</a>
     </div>
@@ -10,13 +9,13 @@
 
             <ul class="lista-enlaces">
                 <li class="enlace">
-                    <a href="?menu=Oferta">Que ofrecemos <span class="oculto"></span></a>
+                    <a href="?menu=ListaUsuario">Lista Usuario<span class="oculto"></span></a>
                 </li>
                 <li class="enlace">
-                    <a href="?menu=Conocenos">Quienes Somos<span class="oculto"></span></a>
+                    <a href="?menu=Solicitudes">Solicitudes<span class="oculto"></span></a>
                 </li>
                 <li class="enlace">
-                    <a href="?menu=iniciarSesion">Iniciar Sesión<span class="oculto"></span></a>
+                    <a href="?menu=CierraSesion">Cerrar Sesión<span class="oculto"></span></a>
                 </li>
             </ul>
             

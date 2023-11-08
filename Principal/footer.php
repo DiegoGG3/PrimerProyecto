@@ -1,5 +1,5 @@
 <footer id="footer">
-    <div class="container">
+    <div class="containerFooter">
         <div class="text-center">
             <small>Copyright © Departamento de Informática 2023         Diego García Gay</small>
         </div>

@@ -10,7 +10,7 @@
         <h1>Oferta de Títulos en Autoescuela Fuentezuelas</h1>
 
         <h2>Títulos de Conducción Disponibles</h2>
-        <ul>
+        <ul id='ulOferta'>
             <li>
                 <strong>Título: Licencia de Conducir B</strong>
                 <p>Título que te permite conducir vehículos de turismo.</p>
@@ -26,7 +26,7 @@
         </ul>
 
         <h2>Requisitos para Obtener un Título</h2>
-        <p>Para obtener un título de conducción en Autoescuela Fuentezuelas, debes cumplir con los siguientes requisitos:</p><br>
+        <p>Para obtener un título de conducción en Autoescuela Fuentezuelas, debes cumplir con los siguientes requisitos:</p>
         <ul>
             <li><strong>Tener al menos 18 años de edad.</strong></li>
             <li><strong>Pasar un examen teórico y práctico.</strong></li>
@@ -36,8 +36,6 @@
 
         <h2>Costos</h2>
         <p>Los costos de obtener un título varían según el tipo de título y las clases de vehículos. Contáctanos para obtener información actualizada sobre los precios.</p>
-
-        
 
         <p>¡Esperamos verte pronto en Autoescuela Fuentezuelas!</p>
     </div>

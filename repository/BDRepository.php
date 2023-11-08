@@ -17,14 +17,14 @@
         }
 
         public static function devolverUsuario($conexion,$nombre,$contraseña){
-            $sql= "SELECT * from user where password=:password and nombre=:nombre;";
+            $sql= "SELECT * from user where contraseña=:contraseña and nombre=:nombre;";
             $statement=$conexion->prepare($sql);
             $statement->bindParam(":nombre",$nombre);
-            $statement->bindParam(":password",$contraseña);
+            $statement->bindParam(":contraseña",$contraseña);
             $statement->execute();
 
             while($registro = $statement->fetch(PDO::FETCH_OBJ)){
-                return userRep::crearUsuario($registro->ID,$registro->nombre,$registro->password,$registro->rol);
+                return userRep::crearUsuario($registro->IDuser,$registro->nombre,$registro->password,$registro->rol);
             }
         }
     }

@@ -1,4 +1,4 @@
-body {
+ #bodyInicio{
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -21,12 +21,12 @@ body {
     text-align: center;
 }
 
-h2 {
+#titulo {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-form {
+#formInicio{
     display: flex;
     flex-direction: column;
 }
@@ -36,19 +36,19 @@ form {
     text-align: left;
 }
 
-label {
+.labelInicio {
     display: block;
     font-weight: bold;
 }
 
-input {
+.labelInicio{
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-button {
+#botonInicio {
     background-color: #007BFF;
     color: #fff;
     border: none;
@@ -58,7 +58,7 @@ button {
     font-size: 16px;
 }
 
-a {
+#aInicio {
     text-decoration:none;
     background-color: #007BFF;
     color: #fff;
@@ -69,6 +69,6 @@ a {
     font-size: 16px;
 }
 
-button:hover {
+.container button:hover {
     background-color: #0056b3;
 }

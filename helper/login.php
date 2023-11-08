@@ -26,7 +26,7 @@ class Login
             $this->usuarioLogueado = true;
 
             loginRepository::login($user);
-            header("location: ../index.php");
+            header("location: ./index.php");
 
         }
     }
