@@ -11,7 +11,7 @@
 }
 
 /* Estilos para el contenedor de introducción */
-.intro-container {
+#intro-container {
     text-align: center;
     
     background-color: #fff;

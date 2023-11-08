@@ -27,5 +27,59 @@
     
             $preparedConexion->execute();
         }
+
+        public static function borrarUsuario($conexion, $usuario){
+            $preparedConexion = $conexion->prepare("DELETE FROM User WHERE Nombre = :nombre AND Password = :password");
+        
+            $nombre = $usuario->get_nombre();
+            $password = $usuario->get_password();
+        
+            $preparedConexion->bindParam(':nombre', $nombre);
+            $preparedConexion->bindParam(':password', $password);
+        
+            $preparedConexion->execute();
+        }
+
+        public static function modificarNombre($conexion, $usuario, $nuevoNombre){
+            $preparedConexion = $conexion->prepare("UPDATE User SET Nombre = :nuevoNombre WHERE Nombre = :nombre AND Password = :password");
+        
+            $nombre = $usuario->get_nombre();
+            $password = $usuario->get_password();
+        
+            $preparedConexion->bindParam(':nombre', $nombre);
+            $preparedConexion->bindParam(':password', $password);
+            $preparedConexion->bindParam(':nuevoNombre', $nuevoNombre);
+        
+            $preparedConexion->execute();
+        }
+        
+        public static function modificarPassword($conexion, $usuario, $nuevoPassword){
+            $preparedConexion = $conexion->prepare("UPDATE User SET Password = :nuevoPassword WHERE Nombre = :nombre AND Password = :password");
+        
+            $nombre = $usuario->get_nombre();
+            $password = $usuario->get_password();
+        
+            $preparedConexion->bindParam(':nombre', $nombre);
+            $preparedConexion->bindParam(':password', $password);
+            $preparedConexion->bindParam(':nuevoPassword', $nuevoPassword);
+        
+            $preparedConexion->execute();
+        }
+        
+        public static function modificarRol($conexion, $usuario, $nuevoRol){
+            $preparedConexion = $conexion->prepare("UPDATE User SET Role = :nuevoRol WHERE Nombre = :nombre AND Password = :password");
+        
+            $nombre = $usuario->get_nombre();
+            $password = $usuario->get_password();
+        
+            $preparedConexion->bindParam(':nombre', $nombre);
+            $preparedConexion->bindParam(':password', $password);
+            $preparedConexion->bindParam(':nuevoRol', $nuevoRol);
+        
+            $preparedConexion->execute();
+        }
+        
+        
+        
     }
 ?>
