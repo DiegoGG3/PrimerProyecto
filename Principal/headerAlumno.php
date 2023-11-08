@@ -1,7 +1,6 @@
 
 
 <header>
-    
     <div id="titulo">
         <a class="inicio" href="#">Autoescuela Las Fuentezuelas</a>
     </div>

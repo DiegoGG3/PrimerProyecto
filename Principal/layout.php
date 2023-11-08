@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="./css/estiloPagina.css">
     <link rel="stylesheet" type="text/css" href="./css/estiloHeader.css">
     <link rel="stylesheet" type="text/css" href="./css/body.css">
+    <link rel="stylesheet" type="text/css" href="./css/oferta.css">
+
 
 </head>
 

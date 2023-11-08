@@ -10,10 +10,11 @@
                 case "ADMIN":
                     require_once 'adminHeader.php';
                     break;
+
                 case "ALUMNO":
                     require_once 'headerAlumno.php';
-
                     break;
+                    
                 case "PROFESOR":
                     require_once 'teacherHeader.php';
                     break;

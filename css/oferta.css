@@ -1,0 +1,17 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+li{
+    margin-right: 60px;
+}
+h2{
+    color:rgb(13, 0, 255);
+}
+
+#cuerpo {
+    background-color: rgb(173, 173, 163);
+    align-items: center;
+}

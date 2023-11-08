@@ -31,15 +31,7 @@ if (isset($_POST['login'])) {
             $_SESSION['username'] = $username;
         }
 
-        // $user=BDRepository::devolverUsuario($conexion, $username, $password);
-
-        // if ($user==null) {
-        //     var_dump("MAL");
-        // }else{
-        //     loginRepository::login($user);
-        //     $_GET['menu'] == "inicio";
-        //     require_once '../Principal/enruta.php';
-        // }
+       
     }
 
 }else{
