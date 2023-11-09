@@ -3,7 +3,7 @@
 <header>
     
     <div id="titulo">
-        <a class="inicio" href="#">Autoescuela Las Fuentezuelas</a>
+        <a class="inicio" href="index.php">Autoescuela Las Fuentezuelas</a>
     </div>
 
     <nav class="barra-navegacion">
