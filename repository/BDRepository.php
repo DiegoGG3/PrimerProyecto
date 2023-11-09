@@ -12,6 +12,9 @@
                 case "User":
                     return userRep::arrayUser($objetos);
                     break;
+                case "userPendiente":
+                    return userPendientesRepository::arrayPendientes($objetos);
+                    break;
                 
             }
         }

@@ -6,7 +6,7 @@
     font-family: Arial, sans-serif;
     background-size: cover;
     height: 100vh;
-    background-image: url('imagenes/fuentezuelas.jpg'); 
+    background-color: rgb(173, 173, 163);
 }
 
 /* Estilos para el encabezado */
