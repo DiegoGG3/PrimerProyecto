@@ -33,6 +33,10 @@ if (isset($_GET['menu'])) {
     if ($_GET['menu'] == "Solicitudes") {
         require_once "./interfaz/solicitudes.php";
     }
+
+    if ($_GET['menu'] == "Solicitudes") {
+        require_once "./interfaz/solicitudes.php";
+    }
     
 
         
