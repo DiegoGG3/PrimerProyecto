@@ -13,16 +13,11 @@
             return $arrayUsu;
         }
 
-        public static function añadirUsuario($conexion,$usuario){
-            $preparedConexion=$conexion->prepare("INSERT INTO userNoLog(Nombre,contraseña)
-            VALUES (:nombre,:contraseña)");
+        public static function añadirUsuario($conexion,$nombre, $contraseña){
+            $preparedConexion=$conexion->prepare("INSERT INTO userPendiente(Nombre,contraseña)
+            VALUES ( $nombre, $contraseña)");
     
-            $nombre=$usuario->get_nombre();
-            $contraseña=$usuario->get_contraseña();
-    
-            $preparedConexion->bindParam(':nombre',$nombre);
-            $preparedConexion->bindParam(':contraseña',$contraseña);
-    
+            
             $preparedConexion->execute();
         }
 
