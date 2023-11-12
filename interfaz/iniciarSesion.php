@@ -59,7 +59,7 @@ function pintaPantalla(){
             </div>
             <button type='submit' name='login' id='botonInicio'>Iniciar Sesión</button><br>
         </form>
-            <a href='./interfaz/registrarse.php' id='aInicio'>Regístrate</a>
+            <a href='?menu=Registro' id='aInicio'>Regístrate</a>
     
         </div>
     </body>

@@ -34,8 +34,8 @@ if (isset($_GET['menu'])) {
         require_once "./interfaz/solicitudes.php";
     }
 
-    if ($_GET['menu'] == "Solicitudes") {
-        require_once "./interfaz/solicitudes.php";
+    if ($_GET['menu'] == "Registro") {
+        require_once "./interfaz/registrarse.php";
     }
     
 
