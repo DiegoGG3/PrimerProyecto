@@ -17,6 +17,8 @@ $usuarios = BDRepository::selectUniversal($conexion, 'userPendiente');
             <th>ID</th>
             <th>Nombre</th>
             <th>contraseña</th>
+            <th>Rol</th>
+
         </tr>
         <?php foreach ($usuarios as $usuario): 
             ?>
@@ -24,7 +26,18 @@ $usuarios = BDRepository::selectUniversal($conexion, 'userPendiente');
             <td><?php echo htmlspecialchars($usuario->get_IdPendiente()); ?></td>
             <td><?php echo htmlspecialchars($usuario->get_Nombre()); ?></td>
             <td><?php echo htmlspecialchars($usuario->get_Contraseña()); ?></td>
+            <td>
+                <select name="rol">
+                    <option value="Alumno" selected>Alumno</option>
+                    <option value="Profesor">Profesor</option>
+                    <option value="Admin">Admin</option>
+
+                </select>
+            </td>
+            <td><button>Aceptar</button><button>Rechazar</button></td>
         </tr>
+        
+
         <?php endforeach; ?>
     </table>
 </body>
