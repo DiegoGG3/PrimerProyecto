@@ -10,9 +10,6 @@
     
     $usuario = userPendientesRepository::devolverId($conexion, $prueba['idUser']);
     $usuario->set_IdPendiente($prueba['idUser']);
-    $usuario->set_Rol($prueba['rol']);
-
-    userRep::añadirUsuario($conexion, $usuario);
 
     userPendientesRepository::borrarUsuario($conexion, $usuario);
 ?>

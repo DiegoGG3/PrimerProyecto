@@ -14,17 +14,17 @@
         }
 
         public static function añadirUsuario($conexion,$usuario){
-            $preparedConexion=$conexion->prepare("INSERT INTO User(Nombre,contraseña,Role)
-            VALUES (:nombre,:contraseña,:role)");
+            $preparedConexion=$conexion->prepare("INSERT INTO User(IDuser, nombre,contraseña,rol)
+            VALUES ('', :nombre,:contrasena,:rol)");
     
             $nombre=$usuario->get_nombre();
             $contraseña=$usuario->get_contraseña();
-            $role=$usuario->get_role();
+            $rol=$usuario->get_rol();
+            
     
             $preparedConexion->bindParam(':nombre',$nombre);
-            $preparedConexion->bindParam(':contraseña',$contraseña);
-            $preparedConexion->bindParam(':role',$role);
-    
+            $preparedConexion->bindParam(':contrasena',$contraseña);
+            $preparedConexion->bindParam(':rol',$rol);
             $preparedConexion->execute();
         }
 

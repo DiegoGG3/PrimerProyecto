@@ -16,7 +16,7 @@
                     break;
                     
                 case "PROFESOR":
-                    require_once 'teacherHeader.php';
+                    require_once 'headerProfe.php';
                     break;
                 }
             }

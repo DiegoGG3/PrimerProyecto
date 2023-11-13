@@ -1,4 +1,9 @@
-
+<?php 
+if(isset($_GET['operacion']) && $_GET['operacion'] === 'CierraSesion'){
+    loginRepository::cierraSesion();
+    header("location: index.php");
+}
+?>
 
 <header>
     <div id="titulo">
@@ -15,7 +20,7 @@
                     <a href="?menu=Conocenos">Quienes Somos<span class="oculto"></span></a>
                 </li>
                 <li class="enlace">
-                    <a href="?menu=CierraSesion">Cerrar Sesión<span class="oculto"></span></a>
+                    <a href="?operacion=CierraSesion">Cerrar Sesión<span class="oculto"></span></a>
                 </li>
             </ul>
             

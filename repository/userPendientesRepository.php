@@ -1,14 +1,14 @@
 <?php
     class userPendientesRepository{
-        public static function crearUsuario($IdPendiente,$nombre,$contraseña){
-            $usuario=new UserPendiente($IdPendiente,$nombre,$contraseña);
+        public static function crearUsuario($IdPendiente,$nombre,$contraseña,$rol){
+            $usuario=new UserPendiente($IdPendiente,$nombre,$contraseña,"");
             return $usuario;
         }
 
         public static function arrayPendientes($objetos) {
             $arrayUsu= array();
             foreach($objetos as $array){
-                array_push($arrayUsu,userPendientesRepository::crearUsuario($array->IdPendiente,$array->Nombre,$array->Contraseña));
+                array_push($arrayUsu,userPendientesRepository::crearUsuario($array->IdPendiente,$array->Nombre,$array->Contraseña,""));
             }
             return $arrayUsu;
         }
@@ -28,21 +28,24 @@
         }
 
         public static function borrarUsuario($conexion, $usuario){
-            $preparedConexion = $conexion->prepare("DELETE FROM User WHERE Nombre = :nombre AND contraseña = :contraseña");
+            $preparedConexion = $conexion->prepare("DELETE FROM userPendiente WHERE Nombre = :nombre AND contraseña = :contrasena");
         
             $nombre = $usuario->get_nombre();
             $contraseña = $usuario->get_contraseña();
+
+            var_dump($usuario);
+
         
             $preparedConexion->bindParam(':nombre', $nombre);
-            $preparedConexion->bindParam(':contraseña', $contraseña);
+            $preparedConexion->bindParam(':contrasena', $contraseña);
         
             $preparedConexion->execute();
         }
 
         public static function devolverId($conexion, $id){
-            $user = $conexion->query('SELECT FROM userPendiente where IdPendiente='.$id.';',MYSQL_USE_RESULT);
+            $user = $conexion->query('SELECT * FROM userPendiente where IdPendiente='.$id.';' ,MYSQLI_USE_RESULT);
             while ($registro = $user->fetch(PDO::FETCH_OBJ)) {
-                return userPendientesRepository::crearUsuario("", $registro->nombre, $registro->contraseña);
+                return userPendientesRepository::crearUsuario("", $registro->Nombre, $registro->Contraseña,"");
             }
 
         }

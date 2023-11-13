@@ -1,7 +1,7 @@
 <?php
 if (isset($_GET['menu'])) {
     if ($_GET['menu'] == "inicio") {
-        require_once '.index.php';
+        require_once 'index.php';
     }
     if ($_GET['menu'] == "login") {
         require_once './Vistas/Login/autentifica.php';
@@ -38,6 +38,13 @@ if (isset($_GET['menu'])) {
         require_once "./interfaz/registrarse.php";
     }
     
+    if ($_GET['menu'] == "CrearExamen") {
+        require_once "./interfaz/CrearExamen.php";
+    }
+
+    if ($_GET['menu'] == "AsignarExamen") {
+        require_once "./interfaz/AsignarExamen.php";
+    }
 
         
 }
