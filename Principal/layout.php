@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Autoescuela Fuentezuelas</title>
-    <link rel="stylesheet" type="text/css" href="./css/estiloPagina.css">
-    <link rel="stylesheet" type="text/css" href="./css/estiloHeader.css">
-    <link rel="stylesheet" type="text/css" href="./css/body.css">
-    <link rel="stylesheet" type="text/css" href="./css/oferta.css">
-    <link rel='stylesheet' type='text/css' href='./css/inicioSesio.css'>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
 
 
 
