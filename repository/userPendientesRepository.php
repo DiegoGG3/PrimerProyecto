@@ -38,6 +38,14 @@
         
             $preparedConexion->execute();
         }
+
+        public static function devolverId($conexion, $id){
+            $user = $conexion->query('SELECT FROM userPendiente where IdPendiente='.$id.';',MYSQL_USE_RESULT);
+            while ($registro = $user->fetch(PDO::FETCH_OBJ)) {
+                return userPendientesRepository::crearUsuario("", $registro->nombre, $registro->contraseña);
+            }
+
+        }
         
         
     }

@@ -13,6 +13,6 @@ function aceptarUser(boton){
     })
     .then(response => response.text())
     .then(data => {
-      console.log("Perfe manin");
+      location.reload();
     });
   }
