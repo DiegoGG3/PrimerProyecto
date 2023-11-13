@@ -14,18 +14,10 @@ $valida=new Validacion();
 if (isset($_POST['registro'])) {
     $valida->Requerido('username');
     $valida->Requerido('password');
-    $valida->Requerido('confirm-password');
+    $valida->Requerido('confirmar');
 
-    if ($valida->ValidacionPasada()) {
-
-        $password2 = $_POST['confirm-password'];
-        $password = $_POST['password'];
-        $nombre = $_POST['username'];
-
-
-        if ($password2 === $password) {
-        userPendiente::añadirUsuario($conexion,$nombre,$password);
-        }
+    if ($valida->ValidacionPasada() && $_POST['password']==$_POST['confirmar']) {
+        registroRepository::registroPendiente($conexion, $_POST['username'], $_POST['password']);
     }   
 
 }else{
@@ -45,7 +37,7 @@ function pintaPantalla(){
         <div class='container'>
             <h2>Registrarse</h2>
             
-            <form>
+            <form action='' method='post'>
                 <div class='input-container'>
                     <label for='username'>Nombre de usuario</label>
                     <input type='text' id='username' name='username' required>
@@ -56,7 +48,7 @@ function pintaPantalla(){
                 </div>
                 <div class='input-container'>
                     <label for='confirm-password'>Repetir Contraseña</label>
-                    <input type='password' id='confirm-password' name='confirm-password' required>
+                    <input type='password' id='confirm-password' name='confirmar' required>
                 </div>
                 <button type='submit' name='registro'>Registrarse</button>
             </form>

@@ -23,9 +23,9 @@ $usuarios = BDRepository::selectUniversal($conexion, 'userPendiente');
         <?php foreach ($usuarios as $usuario): 
             ?>
         <tr>
-            <td><?php echo htmlspecialchars($usuario->get_IdPendiente()); ?></td>
-            <td><?php echo htmlspecialchars($usuario->get_Nombre()); ?></td>
-            <td><?php echo htmlspecialchars($usuario->get_Contraseña()); ?></td>
+            <td id=<?php echo ($usuario->get_IdPendiente()); ?> ><?php echo ($usuario->get_IdPendiente()); ?></td>
+            <td><?php echo ($usuario->get_Nombre()); ?></td>
+            <td><?php echo ($usuario->get_Contraseña()); ?></td>
             <td>
                 <select name="rol">
                     <option value="Alumno" selected>Alumno</option>
@@ -34,11 +34,15 @@ $usuarios = BDRepository::selectUniversal($conexion, 'userPendiente');
 
                 </select>
             </td>
-            <td><button>Aceptar</button><button>Rechazar</button></td>
+            <td>
+                <button id="aceptar" onclick='aceptarUser(this)'>Aceptar</button>
+                <button id="rechazar" onclick='rechazarUser(this)'>Rechazar</button>
+            </td>
         </tr>
         
 
         <?php endforeach; ?>
     </table>
+<script src='api/apiAceptar.js'></script>
 </body>
 </html>
