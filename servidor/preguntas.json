@@ -1,343 +1,343 @@
-        [
-            
-                    {
-                        "numero": 1,
-                        "categoria": "motor",
-                        "descripcion": "¿Qué es el par motor?",
-                        "respuesta1": "Fuerza de giro del motor.",
-                        "respuesta2": "Un tipo de aceite para motores.",
-                        "respuesta3": "La velocidad máxima del vehículo.",
-                        "valida": 1
-                    },
-                    {
-                        "numero": 2,
-                        "categoria": "Circulacion",
-                        "descripcion": "¿Cómo se entra a una rotonda?",
-                        "respuesta1": "Por el carril izquierdo.",
-                        "respuesta2": "Cediendo el paso a los vehículos que ya circulan en la rotonda.",
-                        "respuesta3": "Sin importar el tráfico en la rotonda.",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 3,
-                        "categoria": "Motor",
-                        "descripcion": "¿Cuántos caballos tiene el motor de un coche?",
-                        "respuesta1": "Depende del color del coche.",
-                        "respuesta2": "Varía según la marca y modelo del vehículo.",
-                        "respuesta3": "Es una medida de potencia del motor.",
-                        "valida": 3
-                    },
-                    {
-                        "numero": 4,
-                        "categoria": "motor",
-                        "descripcion": "¿Qué es el par motor?",
-                        "respuesta1": "Fuerza de giro del motor.",
-                        "respuesta2": "Un tipo de aceite para motores.",
-                        "respuesta3": "La velocidad máxima del vehículo.",
-                        "valida": 1
-                    },
-                    {
-                        "numero": 5,
-                        "categoria": "Circulacion",
-                        "descripcion": "¿Cómo se entra a una rotonda?",
-                        "respuesta1": "Por el carril izquierdo.",
-                        "respuesta2": "Cediendo el paso a los vehículos que ya circulan en la rotonda.",
-                        "respuesta3": "Sin importar el tráfico en la rotonda.",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 6,
-                        "categoria": "Motor",
-                        "descripcion": "¿Cuántos caballos tiene el motor de un coche?",
-                        "respuesta1": "Depende del color del coche.",
-                        "respuesta2": "Varía según la marca y modelo del vehículo.",
-                        "respuesta3": "Es una medida de potencia del motor.",
-                        "valida": 3
-                    },
-                    {
-                        "numero": 7,
-                        "categoria": "motor",
-                        "descripcion": "¿Qué es el par motor?",
-                        "respuesta1": "Fuerza de giro del motor.",
-                        "respuesta2": "Un tipo de aceite para motores.",
-                        "respuesta3": "La velocidad máxima del vehículo.",
-                        "valida": 1
-                    },
-                    {
-                        "numero": 8,
-                        "categoria": "Circulacion",
-                        "descripcion": "¿Cómo se entra a una rotonda?",
-                        "respuesta1": "Por el carril izquierdo.",
-                        "respuesta2": "Cediendo el paso a los vehículos que ya circulan en la rotonda.",
-                        "respuesta3": "Sin importar el tráfico en la rotonda.",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 9,
-                        "categoria": "Motor",
-                        "descripcion": "¿Cuántos caballos tiene el motor de un coche?",
-                        "respuesta1": "Depende del color del coche.",
-                        "respuesta2": "Varía según la marca y modelo del vehículo.",
-                        "respuesta3": "Es una medida de potencia del motor.",
-                        "valida": 3
-                    },
-                    {
-                        "numero": 10,
-                        "categoria": "motor",
-                        "descripcion": "¿Qué es el par motor?",
-                        "respuesta1": "Fuerza de giro del motor.",
-                        "respuesta2": "Un tipo de aceite para motores.",
-                        "respuesta3": "La velocidad máxima del vehículo.",
-                        "valida": 1
-                    },
-                    {
-                        "numero": 11,
-                        "categoria": "Circulacion",
-                        "descripcion": "¿Cómo se entra a una rotonda?",
-                        "respuesta1": "Por el carril izquierdo.",
-                        "respuesta2": "Cediendo el paso a los vehículos que ya circulan en la rotonda.",
-                        "respuesta3": "Sin importar el tráfico en la rotonda.",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 12,
-                        "categoria": "Motor",
-                        "descripcion": "¿Cuántos caballos tiene el motor de un coche?",
-                        "respuesta1": "Depende del color del coche.",
-                        "respuesta2": "Varía según la marca y modelo del vehículo.",
-                        "respuesta3": "Es una medida de potencia del motor.",
-                        "valida": 3
-                    },
-                
-                    {
-                        "numero": 11,
-                        "categoria": "Señales",
-                        "descripcion": "¿Cuál es el significado de una señal de stop?",
-                        "respuesta1": "Reducir la velocidad.",
-                        "respuesta2": "Detenerse por completo.",
-                        "respuesta3": "Aumentar la velocidad.",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 12,
-                        "categoria": "Normativa",
-                        "descripcion": "¿Cuál es la velocidad máxima permitida en una zona urbana?",
-                        "respuesta1": "80 km/h",
-                        "respuesta2": "50 km/h",
-                        "respuesta3": "120 km/h",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 13,
-                        "categoria": "Conducción",
-                        "descripcion": "¿En qué situación deberías utilizar las luces antiniebla?",
-                        "respuesta1": "En días soleados.",
-                        "respuesta2": "En condiciones de lluvia intensa o niebla.",
-                        "respuesta3": "Solo de noche.",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 14,
-                        "categoria": "Señales",
-                        "descripcion": "¿Qué indica una señal de ceda el paso?",
-                        "respuesta1": "Tienes preferencia de paso.",
-                        "respuesta2": "Debes ceder el paso a otros vehículos.",
-                        "respuesta3": "Puedes continuar sin detenerte.",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 15,
-                        "categoria": "Normativa",
-                        "descripcion": "¿Cuál es la tasa de alcoholemia permitida para conducir?",
-                        "respuesta1": "0.5 gramos por litro de sangre.",
-                        "respuesta2": "1.0 gramo por litro de sangre.",
-                        "respuesta3": "No se permite ninguna cantidad de alcohol.",
-                        "valida": 3
-                    },
-                    
-                    {
-                        "numero": 16,
-                        "categoria": "Conducción",
-                        "descripcion": "¿Cuál es la distancia de seguridad recomendada en condiciones normales de conducción?",
-                        "respuesta1": "1 metro",
-                        "respuesta2": "2 segundos de tiempo de reacción",
-                        "respuesta3": "Depende del tipo de vehículo",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 17,
-                        "categoria": "Señales",
-                        "descripcion": "¿Qué indica una señal de prohibido adelantar?",
-                        "respuesta1": "Puedes adelantar con precaución",
-                        "respuesta2": "Está permitido adelantar a altas velocidades",
-                        "respuesta3": "Está prohibido adelantar",
-                        "valida": 3
-                    },
-                    {
-                        "numero": 18,
-                        "categoria": "Normativa",
-                        "descripcion": "¿Cuál es la velocidad máxima permitida en una autopista?",
-                        "respuesta1": "100 km/h",
-                        "respuesta2": "120 km/h",
-                        "respuesta3": "150 km/h",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 19,
-                        "categoria": "Conducción",
-                        "descripcion": "¿Qué hacer en caso de aquaplaning?",
-                        "respuesta1": "Aumentar la velocidad",
-                        "respuesta2": "Girar el volante bruscamente",
-                        "respuesta3": "Mantener la dirección del vehículo",
-                        "valida": 3
-                    },
-                    {
-                        "numero": 20,
-                        "categoria": "Señales",
-                        "descripcion": "¿Qué indica una señal de zona de peatones?",
-                        "respuesta1": "Debes circular a mayor velocidad",
-                        "respuesta2": "Precaución, zona con tránsito de peatones",
-                        "respuesta3": "Los peatones deben ceder el paso",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 21,
-                        "categoria": "Normativa",
-                        "descripcion": "¿Cuál es la sanción por conducir bajo los efectos del alcohol?",
-                        "respuesta1": "Amonestación verbal",
-                        "respuesta2": "Retirada temporal del carnet de conducir",
-                        "respuesta3": "Multa económica",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 22,
-                        "categoria": "Conducción",
-                        "descripcion": "¿Qué hacer al encontrarse con una ambulancia con las luces y sirenas encendidas?",
-                        "respuesta1": "Seguir circulando normalmente",
-                        "respuesta2": "Detenerse en medio de la vía",
-                        "respuesta3": "Facilitar el paso y detenerse en un lugar seguro",
-                        "valida": 3
-                    },
-                    {
-                        "numero": 23,
-                        "categoria": "Señales",
-                        "descripcion": "¿Qué indica una señal de fin de prohibición?",
-                        "respuesta1": "Inicio de una zona prohibida",
-                        "respuesta2": "Fin de la prohibición indicada",
-                        "respuesta3": "Advertencia de una prohibición",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 24,
-                        "categoria": "Normativa",
-                        "descripcion": "¿Cuál es la edad mínima para obtener el permiso de conducir de clase B?",
-                        "respuesta1": "16 años",
-                        "respuesta2": "18 años",
-                        "respuesta3": "21 años",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 25,
-                        "categoria": "Conducción",
-                        "descripcion": "¿Cómo se deben utilizar adecuadamente los espejos retrovisores?",
-                        "respuesta1": "No es necesario usarlos",
-                        "respuesta2": "Antes de iniciar la marcha y durante la conducción",
-                        "respuesta3": "Solo en situaciones de emergencia",
-                        "valida": 2
-                    },
-                
-                    
-                    {
-                        "numero": 26,
-                        "categoria": "Señales",
-                        "descripcion": "¿Qué significa una señal de ceda el paso?",
-                        "respuesta1": "Detenerse por completo",
-                        "respuesta2": "Reducir la velocidad",
-                        "respuesta3": "Tienes preferencia de paso",
-                        "valida": 3
-                    },
-                    {
-                        "numero": 27,
-                        "categoria": "Normativa",
-                        "descripcion": "¿Cuándo se considera que un vehículo está mal estacionado?",
-                        "respuesta1": "Cuando está en una zona habilitada para estacionar",
-                        "respuesta2": "Cuando obstaculiza el tráfico o el paso peatonal",
-                        "respuesta3": "Nunca se considera mal estacionado",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 28,
-                        "categoria": "Conducción",
-                        "descripcion": "¿Cómo se deben transportar los objetos en el maletero del vehículo?",
-                        "respuesta1": "De cualquier manera mientras no obstruyan la visión del conductor",
-                        "respuesta2": "Deben estar bien sujetos para evitar desplazamientos",
-                        "respuesta3": "Solo se deben transportar en el asiento trasero",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 29,
-                        "categoria": "Señales",
-                        "descripcion": "¿Qué indica una señal de limitación de velocidad?",
-                        "respuesta1": "Velocidad mínima permitida",
-                        "respuesta2": "Velocidad máxima permitida",
-                        "respuesta3": "Velocidad recomendada",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 30,
-                        "categoria": "Normativa",
-                        "descripcion": "¿Qué documentación debes llevar siempre contigo al conducir?",
-                        "respuesta1": "Solo la licencia de conducir",
-                        "respuesta2": "Licencia de conducir, tarjeta de circulación y póliza de seguro",
-                        "respuesta3": "No es necesario llevar documentación",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 31,
-                        "categoria": "Conducción",
-                        "descripcion": "¿Cómo afecta la fatiga al conductor?",
-                        "respuesta1": "Aumenta la atención y concentración",
-                        "respuesta2": "Reduce la capacidad de reacción y concentración",
-                        "respuesta3": "No tiene efecto en la conducción",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 32,
-                        "categoria": "Señales",
-                        "descripcion": "¿Qué indica una señal de peligro por animales?",
-                        "respuesta1": "Prohibición de circular en presencia de animales",
-                        "respuesta2": "Advertencia de posible presencia de animales en la vía",
-                        "respuesta3": "Obligación de llevar animales en el vehículo",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 33,
-                        "categoria": "Normativa",
-                        "descripcion": "¿Cuál es la multa por estacionar en un lugar reservado para personas con discapacidad?",
-                        "respuesta1": "No hay multa",
-                        "respuesta2": "Multa económica y retirada del vehículo",
-                        "respuesta3": "Solo advertencia verbal",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 34,
-                        "categoria": "Conducción",
-                        "descripcion": "¿Qué hacer al encontrarse con una señal de ceda el paso?",
-                        "respuesta1": "Acelerar para ocupar rápidamente la vía",
-                        "respuesta2": "Detenerse y ceder el paso a los vehículos que se aproximan",
-                        "respuesta3": "Ignorar la señal y continuar",
-                        "valida": 2
-                    },
-                    {
-                        "numero": 35,
-                        "categoria": "Señales",
-                        "descripcion": "¿Qué indica una señal de dirección obligatoria a la derecha?",
-                        "respuesta1": "Se puede girar a la izquierda",
-                        "respuesta2": "Es obligatorio girar a la derecha",
-                        "respuesta3": "Solo es una recomendación",
-                        "valida": 2
-                    }
-                
-                
-        
+    [
+
+    {
+        "numero": 1,
+        "categoria": "motor",
+        "descripcion": "¿Qué es el par motor?",
+        "respuesta1": "Fuerza de giro del motor.",
+        "respuesta2": "Un tipo de aceite para motores.",
+        "respuesta3": "La velocidad máxima del vehículo.",
+        "valida": 1
+    },
+    {
+        "numero": 2,
+            "categoria": "Circulacion",
+        "descripcion": "¿Cómo se entra a una rotonda?",
+        "respuesta1": "Por el carril izquierdo.",
+        "respuesta2": "Cediendo el paso a los vehículos que ya circulan en la rotonda.",
+        "respuesta3": "Sin importar el tráfico en la rotonda.",
+        "valida": 2
+    },
+    {
+        "numero": 3,
+        "categoria": "Motor",
+        "descripcion": "¿Cuántos caballos tiene el motor de un coche?",
+        "respuesta1": "Depende del color del coche.",
+        "respuesta2": "Varía según la marca y modelo del vehículo.",
+        "respuesta3": "Es una medida de potencia del motor.",
+        "valida": 3
+    },
+    {
+        "numero": 4,
+        "categoria": "motor",
+        "descripcion": "¿Qué es el par motor?",
+        "respuesta1": "Fuerza de giro del motor.",
+        "respuesta2": "Un tipo de aceite para motores.",
+        "respuesta3": "La velocidad máxima del vehículo.",
+        "valida": 1
+    },
+    {
+        "numero": 5,
+        "categoria": "Circulacion",
+        "descripcion": "¿Cómo se entra a una rotonda?",
+        "respuesta1": "Por el carril izquierdo.",
+        "respuesta2": "Cediendo el paso a los vehículos que ya circulan en la rotonda.",
+        "respuesta3": "Sin importar el tráfico en la rotonda.",
+        "valida": 2
+    },
+    {
+        "numero": 6,
+        "categoria": "Motor",
+        "descripcion": "¿Cuántos caballos tiene el motor de un coche?",
+        "respuesta1": "Depende del color del coche.",
+        "respuesta2": "Varía según la marca y modelo del vehículo.",
+        "respuesta3": "Es una medida de potencia del motor.",
+        "valida": 3
+    },
+    {
+        "numero": 7,
+        "categoria": "motor",
+        "descripcion": "¿Qué es el par motor?",
+        "respuesta1": "Fuerza de giro del motor.",
+        "respuesta2": "Un tipo de aceite para motores.",
+        "respuesta3": "La velocidad máxima del vehículo.",
+        "valida": 1
+    },
+    {
+        "numero": 8,
+        "categoria": "Circulacion",
+        "descripcion": "¿Cómo se entra a una rotonda?",
+        "respuesta1": "Por el carril izquierdo.",
+        "respuesta2": "Cediendo el paso a los vehículos que ya circulan en la rotonda.",
+        "respuesta3": "Sin importar el tráfico en la rotonda.",
+        "valida": 2
+    },
+    {
+        "numero": 9,
+        "categoria": "Motor",
+        "descripcion": "¿Cuántos caballos tiene el motor de un coche?",
+        "respuesta1": "Depende del color del coche.",
+        "respuesta2": "Varía según la marca y modelo del vehículo.",
+        "respuesta3": "Es una medida de potencia del motor.",
+        "valida": 3
+    },
+    {
+        "numero": 10,
+        "categoria": "motor",
+        "descripcion": "¿Qué es el par motor?",
+        "respuesta1": "Fuerza de giro del motor.",
+        "respuesta2": "Un tipo de aceite para motores.",
+        "respuesta3": "La velocidad máxima del vehículo.",
+        "valida": 1
+    },
+    {
+        "numero": 11,
+        "categoria": "Circulacion",
+        "descripcion": "¿Cómo se entra a una rotonda?",
+        "respuesta1": "Por el carril izquierdo.",
+        "respuesta2": "Cediendo el paso a los vehículos que ya circulan en la rotonda.",
+        "respuesta3": "Sin importar el tráfico en la rotonda.",
+        "valida": 2
+    },
+    {
+        "numero": 12,
+        "categoria": "Motor",
+        "descripcion": "¿Cuántos caballos tiene el motor de un coche?",
+        "respuesta1": "Depende del color del coche.",
+        "respuesta2": "Varía según la marca y modelo del vehículo.",
+        "respuesta3": "Es una medida de potencia del motor.",
+        "valida": 3
+    },
+
+    {
+        "numero": 11,
+        "categoria": "Señales",
+        "descripcion": "¿Cuál es el significado de una señal de stop?",
+        "respuesta1": "Reducir la velocidad.",
+        "respuesta2": "Detenerse por completo.",
+        "respuesta3": "Aumentar la velocidad.",
+        "valida": 2
+    },
+    {
+        "numero": 12,
+        "categoria": "Normativa",
+        "descripcion": "¿Cuál es la velocidad máxima permitida en una zona urbana?",
+        "respuesta1": "80 km/h",
+        "respuesta2": "50 km/h",
+        "respuesta3": "120 km/h",
+        "valida": 2
+    },
+    {
+        "numero": 13,
+        "categoria": "Conducción",
+        "descripcion": "¿En qué situación deberías utilizar las luces antiniebla?",
+        "respuesta1": "En días soleados.",
+        "respuesta2": "En condiciones de lluvia intensa o niebla.",
+        "respuesta3": "Solo de noche.",
+        "valida": 2
+    },
+    {
+        "numero": 14,
+        "categoria": "Señales",
+        "descripcion": "¿Qué indica una señal de ceda el paso?",
+        "respuesta1": "Tienes preferencia de paso.",
+        "respuesta2": "Debes ceder el paso a otros vehículos.",
+        "respuesta3": "Puedes continuar sin detenerte.",
+        "valida": 2
+    },
+    {
+        "numero": 15,
+        "categoria": "Normativa",
+        "descripcion": "¿Cuál es la tasa de alcoholemia permitida para conducir?",
+        "respuesta1": "0.5 gramos por litro de sangre.",
+        "respuesta2": "1.0 gramo por litro de sangre.",
+        "respuesta3": "No se permite ninguna cantidad de alcohol.",
+        "valida": 3
+    },
+
+    {
+        "numero": 16,
+        "categoria": "Conducción",
+        "descripcion": "¿Cuál es la distancia de seguridad recomendada en condiciones normales de conducción?",
+        "respuesta1": "1 metro",
+        "respuesta2": "2 segundos de tiempo de reacción",
+        "respuesta3": "Depende del tipo de vehículo",
+        "valida": 2
+    },
+    {
+        "numero": 17,
+        "categoria": "Señales",
+        "descripcion": "¿Qué indica una señal de prohibido adelantar?",
+        "respuesta1": "Puedes adelantar con precaución",
+        "respuesta2": "Está permitido adelantar a altas velocidades",
+        "respuesta3": "Está prohibido adelantar",
+        "valida": 3
+    },
+    {
+        "numero": 18,
+        "categoria": "Normativa",
+        "descripcion": "¿Cuál es la velocidad máxima permitida en una autopista?",
+        "respuesta1": "100 km/h",
+        "respuesta2": "120 km/h",
+        "respuesta3": "150 km/h",
+        "valida": 2
+    },
+    {
+        "numero": 19,
+        "categoria": "Conducción",
+        "descripcion": "¿Qué hacer en caso de aquaplaning?",
+        "respuesta1": "Aumentar la velocidad",
+        "respuesta2": "Girar el volante bruscamente",
+        "respuesta3": "Mantener la dirección del vehículo",
+        "valida": 3
+    },
+    {
+        "numero": 20,
+        "categoria": "Señales",
+        "descripcion": "¿Qué indica una señal de zona de peatones?",
+        "respuesta1": "Debes circular a mayor velocidad",
+        "respuesta2": "Precaución, zona con tránsito de peatones",
+        "respuesta3": "Los peatones deben ceder el paso",
+        "valida": 2
+    },
+    {
+        "numero": 21,
+        "categoria": "Normativa",
+        "descripcion": "¿Cuál es la sanción por conducir bajo los efectos del alcohol?",
+        "respuesta1": "Amonestación verbal",
+        "respuesta2": "Retirada temporal del carnet de conducir",
+        "respuesta3": "Multa económica",
+        "valida": 2
+    },
+    {
+        "numero": 22,
+        "categoria": "Conducción",
+        "descripcion": "¿Qué hacer al encontrarse con una ambulancia con las luces y sirenas encendidas?",
+        "respuesta1": "Seguir circulando normalmente",
+        "respuesta2": "Detenerse en medio de la vía",
+        "respuesta3": "Facilitar el paso y detenerse en un lugar seguro",
+        "valida": 3
+    },
+    {
+        "numero": 23,
+        "categoria": "Señales",
+        "descripcion": "¿Qué indica una señal de fin de prohibición?",
+        "respuesta1": "Inicio de una zona prohibida",
+        "respuesta2": "Fin de la prohibición indicada",
+        "respuesta3": "Advertencia de una prohibición",
+        "valida": 2
+    },
+    {
+        "numero": 24,
+        "categoria": "Normativa",
+        "descripcion": "¿Cuál es la edad mínima para obtener el permiso de conducir de clase B?",
+        "respuesta1": "16 años",
+        "respuesta2": "18 años",
+        "respuesta3": "21 años",
+        "valida": 2
+    },
+    {
+        "numero": 25,
+        "categoria": "Conducción",
+        "descripcion": "¿Cómo se deben utilizar adecuadamente los espejos retrovisores?",
+        "respuesta1": "No es necesario usarlos",
+        "respuesta2": "Antes de iniciar la marcha y durante la conducción",
+        "respuesta3": "Solo en situaciones de emergencia",
+        "valida": 2
+    },
+
+
+    {
+        "numero": 26,
+        "categoria": "Señales",
+        "descripcion": "¿Qué significa una señal de ceda el paso?",
+        "respuesta1": "Detenerse por completo",
+        "respuesta2": "Reducir la velocidad",
+        "respuesta3": "Tienes preferencia de paso",
+        "valida": 3
+    },
+    {
+        "numero": 27,
+        "categoria": "Normativa",
+        "descripcion": "¿Cuándo se considera que un vehículo está mal estacionado?",
+        "respuesta1": "Cuando está en una zona habilitada para estacionar",
+        "respuesta2": "Cuando obstaculiza el tráfico o el paso peatonal",
+        "respuesta3": "Nunca se considera mal estacionado",
+        "valida": 2
+    },
+    {
+        "numero": 28,
+        "categoria": "Conducción",
+        "descripcion": "¿Cómo se deben transportar los objetos en el maletero del vehículo?",
+        "respuesta1": "De cualquier manera mientras no obstruyan la visión del conductor",
+        "respuesta2": "Deben estar bien sujetos para evitar desplazamientos",
+        "respuesta3": "Solo se deben transportar en el asiento trasero",
+        "valida": 2
+    },
+    {
+        "numero": 29,
+        "categoria": "Señales",
+        "descripcion": "¿Qué indica una señal de limitación de velocidad?",
+        "respuesta1": "Velocidad mínima permitida",
+        "respuesta2": "Velocidad máxima permitida",
+        "respuesta3": "Velocidad recomendada",
+        "valida": 2
+    },
+    {
+        "numero": 30,
+        "categoria": "Normativa",
+        "descripcion": "¿Qué documentación debes llevar siempre contigo al conducir?",
+        "respuesta1": "Solo la licencia de conducir",
+        "respuesta2": "Licencia de conducir, tarjeta de circulación y póliza de seguro",
+        "respuesta3": "No es necesario llevar documentación",
+        "valida": 2
+    },
+    {
+        "numero": 31,
+        "categoria": "Conducción",
+        "descripcion": "¿Cómo afecta la fatiga al conductor?",
+        "respuesta1": "Aumenta la atención y concentración",
+        "respuesta2": "Reduce la capacidad de reacción y concentración",
+        "respuesta3": "No tiene efecto en la conducción",
+        "valida": 2
+    },
+    {
+        "numero": 32,
+        "categoria": "Señales",
+        "descripcion": "¿Qué indica una señal de peligro por animales?",
+        "respuesta1": "Prohibición de circular en presencia de animales",
+        "respuesta2": "Advertencia de posible presencia de animales en la vía",
+        "respuesta3": "Obligación de llevar animales en el vehículo",
+        "valida": 2
+    },
+    {
+        "numero": 33,
+        "categoria": "Normativa",
+        "descripcion": "¿Cuál es la multa por estacionar en un lugar reservado para personas con discapacidad?",
+        "respuesta1": "No hay multa",
+        "respuesta2": "Multa económica y retirada del vehículo",
+        "respuesta3": "Solo advertencia verbal",
+        "valida": 2
+    },
+    {
+        "numero": 34,
+        "categoria": "Conducción",
+        "descripcion": "¿Qué hacer al encontrarse con una señal de ceda el paso?",
+        "respuesta1": "Acelerar para ocupar rápidamente la vía",
+        "respuesta2": "Detenerse y ceder el paso a los vehículos que se aproximan",
+        "respuesta3": "Ignorar la señal y continuar",
+        "valida": 2
+    },
+    {
+        "numero": 35,
+        "categoria": "Señales",
+        "descripcion": "¿Qué indica una señal de dirección obligatoria a la derecha?",
+        "respuesta1": "Se puede girar a la izquierda",
+        "respuesta2": "Es obligatorio girar a la derecha",
+        "respuesta3": "Solo es una recomendación",
+        "valida": 2
+    }
+
+
+
     ]

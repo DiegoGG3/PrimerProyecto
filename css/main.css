@@ -1,33 +1,9 @@
-/* ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-li{
-    margin-right: 60px;
-}
-h2{
-    color:rgb(13, 0, 255);
-}
 
-#cuerpo {
-    background-color: rgb(173, 173, 163);
-    align-items: center;
-} */
-
-/* Reset some default styles */
-body,
-h1,
-h2,
-ul,
-p,
-form {
+body,h1,h2,ul,p,form {
     margin: 0;
     padding: 0;
 }
 
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
 }
@@ -37,7 +13,6 @@ body {
     margin: 0 auto;
 }
 
-/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
@@ -63,7 +38,6 @@ header {
     margin-right: 15px;
 }
 
-/* Body Styles */
 #cuerpo {
     max-width: 800px;
     margin: 20px auto;
@@ -95,7 +69,6 @@ button {
     cursor: pointer;
 }
 
-/* Footer Styles */
 #footer {
     background-color: #333;
     color: #fff;
@@ -114,7 +87,6 @@ button {
     margin: 0 auto;
 }
 
-/* Login Page Styles */
 #bodyInicio {
     background-color: #f0f0f0;
     display: flex;
@@ -207,7 +179,6 @@ p {
     line-height: 1.5;
 }
 
-/* Reusable Button Styles */
 .button {
     background-color: #4caf50;
     color: #fff;
@@ -218,7 +189,6 @@ p {
     text-decoration: none;
 }
 
-/* Additional Styles for Specific Elements */
 #ulOferta {
     margin-bottom: 30px;
 }

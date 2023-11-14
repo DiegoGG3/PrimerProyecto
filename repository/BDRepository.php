@@ -15,6 +15,10 @@
                 case "userPendiente":
                     return userPendientesRepository::arrayPendientes($objetos);
                     break;
+                case "Pregunta":
+                    return preguntaRepository::arrayPregunta($objetos);
+                    
+                    break;
                 
             }
         }
