@@ -17,7 +17,9 @@
                     break;
                 case "Pregunta":
                     return preguntaRepository::arrayPregunta($objetos);
-                    
+                    break;
+                case "Examen":
+                    return examenRepository::arrayExamen($objetos);
                     break;
                 
             }
@@ -32,6 +34,16 @@
 
             while($registro = $statement->fetch(PDO::FETCH_OBJ)){
                 return userRep::crearUsuario($registro->IDuser,$registro->nombre,$registro->password,$registro->rol);
+            }
+        }
+
+        public static function devolverExamen($conexion){
+            $sql= "SELECT * FROM Examen WHERE ID = (SELECT MAX(ID) FROM Examen);";
+            $statement=$conexion->prepare($sql);
+            $statement->execute();
+
+            while($registro = $statement->fetch(PDO::FETCH_OBJ)){
+                return examenRepository::crearExamen($registro->ID,$registro->fecha_inicio,$registro->id_creador);
             }
         }
     }

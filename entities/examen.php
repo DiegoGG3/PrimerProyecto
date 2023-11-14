@@ -16,17 +16,16 @@ class examen {
         return $this->id;
     }
 
-
-    // Getter para obtener la fecha$fechaHora
-    public function get_fecha$fechaHora() {
-        return $this->fecha$fechaHora;
+    public function get_id_creador() {
+        return $this->id_creador;
     }
 
-    
-    // Getter para obtener la id del creador
-    public function get_idcreador$id_creador() {
-        return $this-$id_creador$id_creador;
+    public function get_Fecha() {
+        return $this->fechaHora;
     }
+
+
+
 
     
 }

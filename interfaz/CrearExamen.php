@@ -21,7 +21,6 @@
     <table>
         
         <tr>
-            <th>Numero Pregunta</th>
             <th>Pregunta</th>
             <th>Entra</th>
 
@@ -29,10 +28,9 @@
        
         <?php foreach ($preguntas as $pregunta): 
             ?>
-        <tr>
-            <td><?php echo ($pregunta->getIdPregunta()); ?></td>
+        <tr id="preguntas">
             <td><?php echo ($pregunta->getEnunciado()); ?></td>
-            <td><input type="checkbox" name="seleccionar"></td>
+            <td><input type="checkbox" name="seleccionar" id="<?php echo($pregunta->getIdPregunta()); ?>"></td>
            
         </tr>
         <?php endforeach; ?>
