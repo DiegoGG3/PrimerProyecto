@@ -4,6 +4,7 @@ $db->abreConexion();
 $conexion = $db->getConexion();
 
 $examenes = BDRepository::selectUniversal($conexion, 'Examen');
+$alumnos = userRep::devolverUsuarioRol($conexion,'Alumno');
 ?>
 
 <!DOCTYPE html>
@@ -25,12 +26,15 @@ $examenes = BDRepository::selectUniversal($conexion, 'Examen');
             <td><?php echo ($examen->get_Fecha()); ?></td>
             <td><?php echo ($examen->get_id_creador()); ?></td>
             <td>
-                <select name="rol">
-                    <option value="Alumno" selected>Alumno</option>
-                    <option value="Profesor">Profesor</option>
-                    <option value="Admin">Admin</option>
-
+                <select name="Alumno">
+                    <?php foreach ($alumnos as $alumno): ?>
+                        <option value="Alumno" selected><?php echo ($alumno->get_Nombre()); ?></option>
+                    <?php endforeach; ?>
                 </select>
+
+            </td>
+            <td>
+                <button id="asignar" onclick='asignarPregunta(this)'>asignar</button>
             </td>
         </tr>
     <?php endforeach; ?>

@@ -13,6 +13,18 @@
             return $arrayUsu;
         }
 
+        public static function devolverUsuarioRol($conexion,$rol){
+            $sql= "SELECT * from User where rol='" . $rol ."';";
+            $statement=$conexion->prepare($sql);
+            $statement->execute();
+            $listaUsuarios= array();
+            while($registro = $statement->fetch(PDO::FETCH_OBJ)){
+                $usuario= userRep::crearUsuario($registro->IDuser,$registro->nombre,$registro->contraseña,$registro->rol);
+                array_push($listaUsuarios,$usuario);
+            }
+            return $listaUsuarios;
+        }
+
         public static function añadirUsuario($conexion,$usuario){
             $preparedConexion=$conexion->prepare("INSERT INTO User(IDuser, nombre,contraseña,rol)
             VALUES ('', :nombre,:contrasena,:rol)");
