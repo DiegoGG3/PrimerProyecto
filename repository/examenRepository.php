@@ -36,5 +36,16 @@
 
             $preparedConexion->execute();
         }
+
+        public static function asignarExamen($conexion, $idExamen,$IdUsuario){
+            $preparedConexion=$conexion->prepare("INSERT INTO usuario_tiene_examen(IdExamen, IdUsuario)
+            VALUES ( :IdExamen, :IdUsuario)");
+
+            $preparedConexion->bindParam(':IdExamen',$idExamen);
+            $preparedConexion->bindParam(':IdUsuario',$IdUsuario);
+
+
+            $preparedConexion->execute();
+        }
     }
 ?>
