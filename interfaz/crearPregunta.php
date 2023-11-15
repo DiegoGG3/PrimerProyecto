@@ -25,11 +25,12 @@ $dificultades = BDRepository::selectUniversal($conexion, 'dificultad');
         <textarea id="enunciado" name="enunciado" required></textarea>
 
         <label for="respuestas">Respuesta 1:</label>
-        <input type="text" id="1" name="respuestas" required>
+        <textarea id="1" name="respuestas" data-id="1" required></textarea>
         <label for="respuestas">Respuesta 2:</label>
-        <input type="text" id="2" name="respuestas" required>
+        <textarea id="2" name="respuestas" data-id="2" required></textarea>
         <label for="respuestas">Respuesta 3:</label>
-        <input type="text" id="3" name="respuestas" required>
+        <textarea id="3" name="respuestas" data-id="3" required></textarea>
+
 
         <label for="categoria">Categoría:</label>
         <select id="categoria" name="categoria" required>
