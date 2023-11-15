@@ -40,14 +40,11 @@
             $preparedConexion->execute();
         }
 
-        public static function borrarUsuario($conexion, $usuario){
-            $preparedConexion = $conexion->prepare("DELETE FROM User WHERE Nombre = :nombre AND contraseña = :contraseña");
+        public static function borrarUsuario($conexion, $id){
+            $preparedConexion = $conexion->prepare("DELETE FROM User WHERE IDuser = :IDuser");
+    
         
-            $nombre = $usuario->get_nombre();
-            $contraseña = $usuario->get_contraseña();
-        
-            $preparedConexion->bindParam(':nombre', $nombre);
-            $preparedConexion->bindParam(':contraseña', $contraseña);
+            $preparedConexion->bindParam(':IDuser', $id);
         
             $preparedConexion->execute();
         }

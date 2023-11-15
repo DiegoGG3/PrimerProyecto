@@ -9,6 +9,8 @@ $usuarios = BDRepository::selectUniversal($conexion, 'User');
 <!DOCTYPE html>
 <html>
 <head>
+<script src='api/apiEliminarUser.js'></script>
+
     <title>Lista de Usuarios</title>
 </head>
 <body>
@@ -24,6 +26,9 @@ $usuarios = BDRepository::selectUniversal($conexion, 'User');
             <td><?php echo htmlspecialchars($usuario->get_Nombre()); ?></td>
             <td><?php echo htmlspecialchars($usuario->get_Contraseña()); ?></td>
             <td><?php echo htmlspecialchars($usuario->get_Rol()); ?></td>
+            <td id="<?php echo htmlspecialchars($usuario->get_Id()); ?>">
+               <button class="eliminar" onclick='eliminarUser(this)'>Eliminar</button>
+            </td>
         </tr>
         <?php endforeach; ?>
     </table>

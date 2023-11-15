@@ -11,7 +11,7 @@ if (isset($_GET['menu'])) {
      
     }
     if ($_GET['menu'] == "Examen") {
-        require_once './interfaz/examen.html';
+        require_once './interfaz/examen.php';
      
     }
     if ($_GET['menu'] == "Oferta") {

@@ -51,6 +51,33 @@
                 return examenRepository::crearExamen($registro->ID,$registro->fecha_inicio,$registro->id_creador);
             }
         }
+
+        public static function devolverExamenAlumno($conexion, $idalumno){
+            
+            $sql= "SELECT IdExamen FROM usuario_tiene_examen WHERE IdUsuario =:IdUsuario ;";
+            $statement=$conexion->prepare($sql);
+            $statement->bindParam(":IdUsuario",$idalumno);
+
+            $statement->execute();
+            $examenes=array();
+            while($registro = $statement->fetch(PDO::FETCH_OBJ)){
+                array_push($examenes, BDRepository::devolverExamenPorId($conexion, $registro->IdExamen));
+
+            }
+            return $examenes;
+        }
+
+        public static function devolverExamenPorId($conexion, $id){
+            $sql= "SELECT * FROM Examen WHERE ID = :ID;";
+            $statement=$conexion->prepare($sql);
+            $statement->bindParam(":ID",$id);
+            $statement->execute();
+
+            while($registro = $statement->fetch(PDO::FETCH_OBJ)){
+                
+                return examenRepository::crearExamen($registro->ID,$registro->fecha_inicio,$registro->id_creador);
+            }
+        }
     }
     
 ?>

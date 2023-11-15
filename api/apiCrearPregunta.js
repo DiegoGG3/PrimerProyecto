@@ -99,8 +99,7 @@
     })
   .then(response => response.text())
   .then(data => {
-      // location.reload();
-      console.log(preguntaData); // data contiene la respuesta del servidor, puedes procesarla según tus necesidades
+      location.reload();
   });
   
 }
