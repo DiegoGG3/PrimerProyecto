@@ -1,12 +1,17 @@
 <?php
-    class respuesta{
+    class respuesta implements JsonSerializable{
         private $letras;
+        private $id;
         private $enunciado;
+        private $buena;
 
-        public function __construct($letras, $enunciado){
-            this->letras = $letras;
-            this->enunciado = $enunciado;
+        public function __construct($id, $letras, $enunciado, $buena){
+            $this->id = $id;
+            $this->letras = $letras;
+            $this->enunciado = $enunciado;
+            $this->buena = $buena;
         }
+    
 
         // Getter para obtener las letras
         public function get_letras() {
@@ -24,6 +29,11 @@
 
         public function set_Enunciado($enunciado) {
             $this->enunciado = $enunciado;
+        }
+
+        public function jsonSerializable(){
+            $vars = get_object_vars($this);
+            return $vars;
         }
     }
 ?>

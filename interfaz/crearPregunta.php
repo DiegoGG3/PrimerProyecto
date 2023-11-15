@@ -14,27 +14,28 @@ $dificultades = BDRepository::selectUniversal($conexion, 'dificultad');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Pregunta</title>
-    
+    <script src='api/apiCrearPregunta.js'></script>
+
 </head>
 <body>
-    <form action="procesar_formulario.php" method="post">
+    <div>
         <h1>Crear pregunta</h1>
 
         <label for="enunciado">Enunciado:</label>
         <textarea id="enunciado" name="enunciado" required></textarea>
 
         <label for="respuestas">Respuesta 1:</label>
-        <input type="text" id="respuesta1" name="respuestas" required>
+        <input type="text" id="1" name="respuestas" required>
         <label for="respuestas">Respuesta 2:</label>
-        <input type="text" id="respuesta2" name="respuestas" required>
+        <input type="text" id="2" name="respuestas" required>
         <label for="respuestas">Respuesta 3:</label>
-        <input type="text" id="respuesta3" name="respuestas" required>
+        <input type="text" id="3" name="respuestas" required>
 
         <label for="categoria">Categoría:</label>
         <select id="categoria" name="categoria" required>
             
             <?php foreach ($categorias as $categoria): ?>
-                <option value="<?php echo ($categoria->get_id_categoria()); ?>"><?php echo strtoupper($categoria->get_nombre()); ?></option>
+                <option value="<?php echo ($categoria->get_nombre()); ?>"><?php echo strtoupper($categoria->get_nombre()); ?></option>
             <?php endforeach; ?>
 
         </select>
@@ -42,13 +43,17 @@ $dificultades = BDRepository::selectUniversal($conexion, 'dificultad');
         <label for="dificultad">Dificultad:</label>
         <select id="dificultad" name="dificultad" required>
             <?php foreach ($dificultades as $dificultad): ?>
-                <option value="<?php echo ($dificultad->get_id_dificultad()); ?>"><?php echo strtoupper($dificultad->get_nombre()); ?></option>
+                <option value="<?php echo ($dificultad->get_nombre()); ?>"><?php echo strtoupper($dificultad->get_nombre()); ?></option>
             <?php endforeach; ?>
         </select>
+        <label for="buena">Respuesta buena:</label>
 
-    
-
-        <button type="submit">Enviar Pregunta</button>
-    </form>
+        <select id="buena" name="buena" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+        </select>
+        <button id="pregunta" onclick='crearPregunta(this)'>Crear Pregunta</button>
+    </div>
 </body>
 </html>
