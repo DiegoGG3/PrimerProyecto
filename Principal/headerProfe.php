@@ -15,7 +15,13 @@ if(isset($_GET['operacion']) && $_GET['operacion'] === 'CierraSesion'){
 
             <ul class="lista-enlaces">
                 <li class="enlace">
+                    <a href="?menu=crearPregunta">Crear Pregunta<span class="oculto"></span></a>
+                </li>
+                <li class="enlace">
                     <a href="?menu=CrearExamen">Crear examen<span class="oculto"></span></a>
+                </li>
+                <li class="enlace">
+                    <a href="?menu=ListaExamen">Lista examen<span class="oculto"></span></a>
                 </li>
                 <li class="enlace">
                     <a href="?menu=AsignarExamen">Asignar examen<span class="oculto"></span></a>

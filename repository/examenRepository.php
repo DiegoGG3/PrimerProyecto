@@ -47,5 +47,32 @@
 
             $preparedConexion->execute();
         }
+
+        public static function borrarExamen($conexion, $id){
+            examenRepository::borrarExamenPreguntas($conexion, $id);
+            examenRepository::borrarExamenAlumnos($conexion, $id);
+
+            $preparedConexion = $conexion->prepare("DELETE FROM Examen WHERE ID = :id");
+        
+            $preparedConexion->bindParam(':id', $id);
+        
+            $preparedConexion->execute();
+        }
+        public static function borrarExamenPreguntas($conexion, $id){
+
+            $preparedConexion = $conexion->prepare("DELETE FROM examen_tiene_pregunta WHERE IdExamen = :id");
+        
+            $preparedConexion->bindParam(':id', $id);
+        
+            $preparedConexion->execute();
+        }
+        public static function borrarExamenAlumnos($conexion, $id){
+
+            $preparedConexion = $conexion->prepare("DELETE FROM usuario_tiene_examen WHERE IdExamen = :id");
+        
+            $preparedConexion->bindParam(':id', $id);
+        
+            $preparedConexion->execute();
+        }
     }
 ?>

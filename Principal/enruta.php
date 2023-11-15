@@ -46,6 +46,15 @@ if (isset($_GET['menu'])) {
         require_once "./interfaz/AsignarExamen.php";
     }
 
+    if ($_GET['menu'] == "ListaExamen") {
+        require_once "./interfaz/ListaExamen.php";
+    }
+
+    if ($_GET['menu'] == "crearPregunta") {
+        require_once "./interfaz/crearPregunta.php";
+    }
+
+
         
 }
 

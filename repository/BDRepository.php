@@ -21,7 +21,12 @@
                 case "Examen":
                     return examenRepository::arrayExamen($objetos);
                     break;
-                
+                case "categoria":
+                    return categoriaRepository::arrayCategoria($objetos);
+                    break;
+                case "dificultad":
+                    return dificultadRepository::arrayDificultad($objetos);
+                    break;
             }
         }
 
