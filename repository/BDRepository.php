@@ -78,6 +78,18 @@
                 return examenRepository::crearExamen($registro->ID,$registro->fecha_inicio,$registro->id_creador);
             }
         }
+
+        public static function devolverPreguntaPorId($conexion, $id){
+            $sql= "SELECT * FROM pregunta WHERE ID_pregunta = :ID;";
+            $statement=$conexion->prepare($sql);
+            $statement->bindParam(":ID",$id);
+            $statement->execute();
+
+            while($registro = $statement->fetch(PDO::FETCH_OBJ)){
+                
+                return preguntaRepository::crearPregunta($registro->ID_pregunta,$registro->Enunciado,$registro->respuestas, $registro->categoria, $registro->dificultad,"","");
+            }
+        }
     }
     
 ?>

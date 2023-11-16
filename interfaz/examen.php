@@ -8,6 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src='api/apiCargarExamen.js'></script>
 
     <title>Lista de Examenes</title>
 </head>
@@ -22,7 +23,7 @@
             <td id="<?php echo ($examen->get_id()); ?>">Examen : <?php echo ($examen->get_id()); ?></td>
             <td><?php echo ($examen->get_Fecha()); ?></td>
             <td>
-                <button class="eliminar" onclick='realizarExamen(this)'>Realizar</button>
+                <button class="eliminar" onclick='hacerExamen(event)'>Realizar</button>
             </td>
         </tr>
     <?php endforeach; ?>

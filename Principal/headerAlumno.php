@@ -6,7 +6,6 @@ if(isset($_GET['operacion']) && $_GET['operacion'] === 'CierraSesion'){
 }
 ?>
 
-<header>
     <div id="titulo">
         <img src="./css/imagenes/logo.jpg" alt="Logo de la autoescuela"> 
         <a class="inicio" href="index.php">Autoescuela Las Fuentezuelas</a>
@@ -25,4 +24,3 @@ if(isset($_GET['operacion']) && $_GET['operacion'] === 'CierraSesion'){
             </ul>
             
     </nav>
-</header>

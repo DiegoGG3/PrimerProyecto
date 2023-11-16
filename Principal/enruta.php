@@ -1,3 +1,5 @@
+<main>
+
 <?php
 if (isset($_GET['menu'])) {
     if ($_GET['menu'] == "inicio") {
@@ -53,9 +55,8 @@ if (isset($_GET['menu'])) {
     if ($_GET['menu'] == "crearPregunta") {
         require_once "./interfaz/crearPregunta.php";
     }
-
-
-        
 }
+?>
+</main>
 
     
