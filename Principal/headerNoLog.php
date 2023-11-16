@@ -1,6 +1,5 @@
 
 
-<header>
     
     <div id="titulo">
         <img src="./css/imagenes/logo.jpg" alt="Logo de la autoescuela"> 
@@ -23,4 +22,3 @@
             </ul>
             
     </nav>
-</header>

@@ -8,7 +8,6 @@ function hacerExamen(ev) {
           var almacen=document.createElement("div");
           almacen.innerHTML=texto;
           var modeloPregunta=almacen.querySelector(".pregunta-container");
-        console.log(modeloPregunta);
           fetch('api/apiCargarExamen.php', {
               method: 'POST',
               headers: {
@@ -41,22 +40,37 @@ function hacerExamen(ev) {
               footer.id="footerPregunta";
               document.body.appendChild(footer);
 
-              for(var i=0;i<y.length;i++){
-                  var plantilla=modeloPregunta.cloneNode(true);
-                  generarPregunta(plantilla,y[i]);
-                  plantilla.childNodes[7].childNodes[3].setAttribute("onclick", "pasarPregunta(this.parentNode.parentNode.id)");
-                  if(y.length-1==i){
-                      plantilla.childNodes[7].childNodes[3].setAttribute("onclick", "enviarExamen(this)");
-                      plantilla.childNodes[7].childNodes[3].innerHTML="Enviar";
-                  }
-                  main.appendChild(plantilla);
-              }
-              console.log(document.getElementsByClassName("pregunta-container"));
-              // var scriptEnviar = document.createElement("script");
-              // scriptEnviar.src="api/enviarExamen.js";
-              // main.appendChild(scriptEnviar);
-              // empezarExamen(document.getElementsByClassName("pregunta-container"));
+                var contenedor=document.createElement("div");
+                contenedor.innerHTML=y;
+                var pregunta = contenedor;
+
+
+
+                    var xhr = new XMLHttpRequest();
+
+                    xhr.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var respuesta = JSON.parse(this.responseText);
+
+                        var preguntas = respuesta.preguntas;
+                        console.log(respuesta.preguntas);
+                    }
+                    };
+                    xhr.open("GET", "./api/apiCargarExamen.php", true);
+                    xhr.send();
+
+            
+                for(let i=0;i<y.length;i++){
+                    var pregAux=pregunta.cloneNode(true);
+
+                    pregAux.getElementsByClassName("enunciado-container")[0].innerHTML=y[i].enunciado;
+                    pregAux.getElementsByClassName("respuesta")[0].innerHTML=y[i].respuesta1;
+                    pregAux.getElementsByClassName("respuesta")[1].innerHTML=y[i].respuesta2;
+                    pregAux.getElementsByClassName("respuesta")[2].innerHTML=y[i].respuesta3;
+
+                    main.appendChild(pregAux);
+                }        
           });
       })
-      
+    
 }

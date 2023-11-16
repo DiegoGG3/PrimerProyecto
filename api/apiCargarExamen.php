@@ -10,6 +10,7 @@ require_once '../helper/autocargar.php';
     $db->abreConexion();
     $conexion = $db->getConexion();
 
-    $preguntas=BDRepository::devolverPreguntaPorId($conexion,1);
-    echo json_encode($preguntas);
+    $preguntas=BDRepository::devolverPreguntaPorId($conexion,2);
+    echo json_encode(array('preguntas' => $preguntas));
+
 ?>

@@ -1,4 +1,7 @@
+
+
 <main>
+<div id="cuerpo">
 
 <?php
 if (isset($_GET['menu'])) {
@@ -57,6 +60,8 @@ if (isset($_GET['menu'])) {
     }
 }
 ?>
+</div>
 </main>
+
 
     
