@@ -1,9 +1,8 @@
 <?php
-$db = new DB();
-$db->abreConexion();
-$conexion = $db->getConexion();
-$examenes = BDRepository::devolverExamenAlumno($conexion, $_SESSION["user"]->get_Id());
-
+    $db = new DB();
+    $db->abreConexion();
+    $conexion = $db->getConexion();
+    $examenes = BDRepository::devolverExamenAlumno($conexion, $_SESSION["user"]->get_Id());
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +18,6 @@ $examenes = BDRepository::devolverExamenAlumno($conexion, $_SESSION["user"]->get
             <th>Fecha Creacion</th>
         </tr>
         <?php foreach ($examenes as $examen): ?>
-            
         <tr>
             <td id="<?php echo ($examen->get_id()); ?>">Examen : <?php echo ($examen->get_id()); ?></td>
             <td><?php echo ($examen->get_Fecha()); ?></td>
