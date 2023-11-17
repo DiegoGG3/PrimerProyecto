@@ -1,7 +1,7 @@
 
 
 <?php
-    class pregunta{
+    class pregunta implements JsonSerializable{
         private $id_pregunta;
         private $enunciado;
         private $respuestas;
@@ -35,7 +35,7 @@
         }
 
         public function getRespuestasObjetos() {
-            return arrayRespuestas($this);
+            return $this->respuestas;
         }
     
         public function setRespuestas($respuestas) {
@@ -65,6 +65,10 @@
         public function setRecurso($recurso) {
              $this->recurso = $recurso;
         }
-    
+
+        public function jsonSerialize(){
+            $vars = get_object_vars($this);
+            return $vars;
+        }
     }
 ?>

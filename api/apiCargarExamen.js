@@ -1,76 +1,88 @@
-function hacerExamen(ev) {
-  ev.preventDefault();
-  var idExamen=this.id;//ID del examen a hacer
-  
-  fetch('./interfaz/pregunta.html')
-      .then(x=>x.text())
-      .then(texto => {
-          var almacen=document.createElement("div");
-          almacen.innerHTML=texto;
-          var modeloPregunta=almacen.querySelector(".pregunta-container");
-          fetch('api/apiCargarExamen.php', {
-              method: 'POST',
-              headers: {
-                  'Content-Type': 'application/json'
-              },
+function hacerExamen(ev,boton) {
+    ev.preventDefault();
+    var idExamen=boton.parentNode.parentNode.childNodes[1].id;//ID del examen a hacer
+    
+    
+    fetch('./interfaz/pregunta.html')
+    .then(x=>x.text())
+    .then(texto => {
+        var almacen=document.createElement("div");
+        almacen.innerHTML=texto;
+        var modeloPregunta=almacen.querySelector(".pregunta-container");
+        fetch('api/apiCargarExamen.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
               body: JSON.stringify({"idExamen":idExamen})
-              })
-          .then(x => x.json())
-          .then(y=>{
+            })
+            .then(x => x.json())
+            .then(y=>{
               var header = document.getElementsByTagName("header");
               document.body.removeChild(header[0]);
               header=document.createElement("header");
               header.id="headerPregunta";
               document.body.appendChild(header);
-
+              
               for(var i=0;i<y.length;i++){
                   var btnHeader =generarHeader(y[i],i+1);
                   header.appendChild(btnHeader);
-              }
-
-              var main = document.getElementsByTagName("main");
-              document.body.removeChild(main[0]);
-              main=document.createElement("main");
-              main.id="mainPregunta";
-              document.body.appendChild(main);
-
-              var footer = document.getElementsByTagName("footer");
-              document.body.removeChild(footer[0]);
-              footer=document.createElement("footer");
-              footer.id="footerPregunta";
-              document.body.appendChild(footer);
-
+                }
+                
+                var main = document.getElementsByTagName("main");
+                document.body.removeChild(main[0]);
+                main=document.createElement("main");
+                main.id="mainPregunta";
+                document.body.appendChild(main);
+                
+                var footer = document.getElementsByTagName("footer");
+                document.body.removeChild(footer[0]);
+                footer=document.createElement("footer");
+                footer.id="footerPregunta";
+                document.body.appendChild(footer);
+                
                 var contenedor=document.createElement("div");
                 contenedor.innerHTML=y;
                 var pregunta = contenedor;
-
-
-
-                    var xhr = new XMLHttpRequest();
-
-                    xhr.onreadystatechange = function() {
-                    if (this.readyState == 4 && this.status == 200) {
-                        var respuesta = JSON.parse(this.responseText);
-
-                        var preguntas = respuesta.preguntas;
-                        console.log(respuesta.preguntas);
+                
+                for(var i=0;i<y.length;i++){
+                        var plantilla=modeloPregunta.cloneNode(true);
+                        console.log();
+                        generarPregunta(modeloPregunta.cloneNode(true),y[i]);
+                   
                     }
-                    };
-                    xhr.open("GET", "./api/apiCargarExamen.php", true);
-                    xhr.send();
-
+                    
+                    // var scriptEnviar = document.createElement("script");
+                    // scriptEnviar.src="api/enviarExamen.js";
+                    // main.appendChild(scriptEnviar);
+                    
+                    // empezarExamen(document.getElementsByClassName("pregunta-container"));
+                    
+                });
+            });
             
-                for(let i=0;i<y.length;i++){
-                    var pregAux=pregunta.cloneNode(true);
+        };
+        
+        function generarHeader(objeto,tamaño){
+            var boton=document.createElement("button");
+            boton.innerHTML=tamaño;
+            boton.id="boton"+objeto.id;
+            return boton;
+        }
+        
+        function generarPregunta(plantilla,y){
+            
+            var respuesta = JSON.parse(y.respuestas);
 
-                    pregAux.getElementsByClassName("enunciado-container")[0].innerHTML=y[i].enunciado;
-                    pregAux.getElementsByClassName("respuesta")[0].innerHTML=y[i].respuesta1;
-                    pregAux.getElementsByClassName("respuesta")[1].innerHTML=y[i].respuesta2;
-                    pregAux.getElementsByClassName("respuesta")[2].innerHTML=y[i].respuesta3;
+    plantilla.getElementsByClassName("enunciado-container")[0].innerHTML=y.enunciado;
 
-                    main.appendChild(pregAux);
-                }        
-          });
-      })
-    
+    plantilla.getElementsByClassName("respuesta")[0].innerHTML=respuesta[0].Enunciado;
+    console.log(plantilla.getElementsByClassName("respuesta")[0]);
+
+    plantilla.getElementsByClassName("respuesta")[1].innerHTML=respuesta[1].Enunciado;
+    (plantilla.getElementsByClassName("respuesta")[0].childNodes[1]);
+
+    plantilla.getElementsByClassName("respuesta")[2].innerHTML=respuesta[2].Enunciado;
+
+        document.body.appendChild(plantilla);
 }

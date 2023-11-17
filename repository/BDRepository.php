@@ -84,11 +84,25 @@
             $statement=$conexion->prepare($sql);
             $statement->bindParam(":ID",$id);
             $statement->execute();
-
             while($registro = $statement->fetch(PDO::FETCH_OBJ)){
                 
                 return preguntaRepository::crearPregunta($registro->ID_pregunta,$registro->Enunciado,$registro->respuestas, $registro->categoria, $registro->dificultad,"","");
             }
+        }
+
+        public static function devolverPreguntas($conexion, $id){
+            $sql= "SELECT IdPregunta FROM examen_tiene_pregunta WHERE IdExamen = :ID;";
+            $statement=$conexion->prepare($sql);
+            $statement->bindParam(":ID",$id);
+            $statement->execute();
+            $preguntas= array();
+
+            while($registro = $statement->fetch(PDO::FETCH_OBJ)){
+                foreach ($registro as $value) {        
+                    array_push($preguntas,BDRepository::devolverPreguntaPorId($conexion,$value));
+                }
+            }
+            return $preguntas;
         }
     }
     

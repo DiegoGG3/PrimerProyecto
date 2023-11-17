@@ -23,7 +23,7 @@
             <td id="<?php echo ($examen->get_id()); ?>">Examen : <?php echo ($examen->get_id()); ?></td>
             <td><?php echo ($examen->get_Fecha()); ?></td>
             <td>
-                <button class="eliminar" onclick='hacerExamen(event)'>Realizar</button>
+                <button class="eliminar" onclick='hacerExamen(event,this)'>Realizar</button>
             </td>
         </tr>
     <?php endforeach; ?>
