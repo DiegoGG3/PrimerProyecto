@@ -1,4 +1,4 @@
-body,h1,h2,ul,p,form {
+body,h1,h2,h4,ul,p,form {
     margin: 0;
     padding: 0;
 }
@@ -70,6 +70,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 2px;
 }
 
 #footer {
@@ -203,4 +204,21 @@ p {
 
 .enlace a:hover {
     color: #4caf50;
+}
+
+.pregunta-container{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+.preguntasv{
+    display: none;
+}
+
+.preguntas{
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
 }
